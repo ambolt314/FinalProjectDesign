@@ -1,9 +1,42 @@
-<mxfile host="app.diagrams.net" modified="2024-02-20T18:55:50.512Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0" version="23.1.5" etag="SM0Z1sXcmDf7KJzJ9EmU" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-20T19:06:02.843Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0" etag="oUkiBiDcOI4dSJyPY9Mv" version="23.1.5" type="github">
   <diagram name="Page-1" id="lkIzZtKHE2g4b-k83Zns">
-    <mxGraphModel>
+    <mxGraphModel dx="1877" dy="634" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="cFXvyy3T8Uc6k7l6PIuW-1" value="/visits-service" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cFXvyy3T8Uc6k7l6PIuW-2" value="/airports" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cFXvyy3T8Uc6k7l6PIuW-3" value="/reports" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cFXvyy3T8Uc6k7l6PIuW-4" value="/visits-confirmation" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cFXvyy3T8Uc6k7l6PIuW-5" value="/visit-requests" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cFXvyy3T8Uc6k7l6PIuW-6" value="/accommodation-requests" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-50" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cFXvyy3T8Uc6k7l6PIuW-8" value="/facilities" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cFXvyy3T8Uc6k7l6PIuW-9" value="/purpose-requests" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cFXvyy3T8Uc6k7l6PIuW-10" value="/service-cache" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cFXvyy3T8Uc6k7l6PIuW-11" value="/visitor-requests" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="930" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cFXvyy3T8Uc6k7l6PIuW-12" value="/visits" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
