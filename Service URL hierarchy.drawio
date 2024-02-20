@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-20T19:20:37.045Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0" etag="P9I5UBxGZhmRcHGvVMpW" version="23.1.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-20T19:39:32.112Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0" etag="62q2zvuYo4RhefIgXi3p" version="23.1.5" type="github">
   <diagram name="Page-1" id="lkIzZtKHE2g4b-k83Zns">
     <mxGraphModel dx="1877" dy="634" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -93,6 +93,45 @@
         </mxCell>
         <mxCell id="cFXvyy3T8Uc6k7l6PIuW-33" value="&lt;u&gt;Endpoint layer&lt;/u&gt;&lt;div align=&quot;left&quot;&gt;This layer details the exact services, implemented as REST API endpoints, from the Visits application. The set is not comprehensive, and is illustrative of the directory structure in which /reports resides&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-340" y="215" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cFXvyy3T8Uc6k7l6PIuW-34" value="&lt;u&gt;Query parameters&lt;br&gt;&lt;/u&gt;&lt;div align=&quot;left&quot;&gt;This layer denotes the query parameters that may be optionally appended to the end of each report to gain specific data&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry y="510" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cFXvyy3T8Uc6k7l6PIuW-39" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="300" y="462.5" width="120" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="cFXvyy3T8Uc6k7l6PIuW-37" value="format" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="cFXvyy3T8Uc6k7l6PIuW-39">
+          <mxGeometry width="120" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="cFXvyy3T8Uc6k7l6PIuW-38" value="&lt;div&gt;Returns the data in a specified format&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;If no value given, JSON data are returned&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="cFXvyy3T8Uc6k7l6PIuW-39">
+          <mxGeometry y="25" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="cFXvyy3T8Uc6k7l6PIuW-40" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="440" y="462.5" width="120" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="cFXvyy3T8Uc6k7l6PIuW-41" value="selection" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="cFXvyy3T8Uc6k7l6PIuW-40">
+          <mxGeometry width="120" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="cFXvyy3T8Uc6k7l6PIuW-42" value="&lt;div&gt;Denotes whether a list of reports are given&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;If no value given, the latest report is returned&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="cFXvyy3T8Uc6k7l6PIuW-40">
+          <mxGeometry y="25" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="cFXvyy3T8Uc6k7l6PIuW-43" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="580" y="462.5" width="120" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="cFXvyy3T8Uc6k7l6PIuW-44" value="visitor-id" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="cFXvyy3T8Uc6k7l6PIuW-43">
+          <mxGeometry width="120" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="cFXvyy3T8Uc6k7l6PIuW-45" value="For those with administrator privileges, this is used to find reports associated with a visitor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="cFXvyy3T8Uc6k7l6PIuW-43">
+          <mxGeometry y="25" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="cFXvyy3T8Uc6k7l6PIuW-46" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="720" y="462.5" width="120" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="cFXvyy3T8Uc6k7l6PIuW-47" value="status" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="cFXvyy3T8Uc6k7l6PIuW-46">
+          <mxGeometry width="120" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="cFXvyy3T8Uc6k7l6PIuW-48" value="&lt;div&gt;Finds reports with a particular status code&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;If not value given, all reports are given&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="cFXvyy3T8Uc6k7l6PIuW-46">
+          <mxGeometry y="25" width="120" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
