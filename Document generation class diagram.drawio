@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-22T17:25:52.362Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0" etag="O5sE5BDKV9YCBt--gLIH" version="23.1.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-22T17:35:36.414Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0" etag="eDYiMzLv1Q6GwoA3OfAl" version="23.1.5" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1050" dy="1803" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -87,6 +87,57 @@
         </mxCell>
         <mxCell id="42Mcp5apY7TqK0RnaU3a-4" value="" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="560" y="429" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="42Mcp5apY7TqK0RnaU3a-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.563;entryY=1.01;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="MQ1HAu035y0CXCqz7wdD-17" target="MQ1HAu035y0CXCqz7wdD-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="42Mcp5apY7TqK0RnaU3a-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;shape=link;fillColor=#1ba1e2;strokeColor=#006EAF;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="42Mcp5apY7TqK0RnaU3a-9" target="MQ1HAu035y0CXCqz7wdD-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="42Mcp5apY7TqK0RnaU3a-9" value="" style="sketch=0;outlineConnect=0;fillColor=#1ba1e2;strokeColor=#006EAF;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.globe;fontColor=#ffffff;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="362" y="-200" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="42Mcp5apY7TqK0RnaU3a-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="42Mcp5apY7TqK0RnaU3a-15" target="42Mcp5apY7TqK0RnaU3a-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="42Mcp5apY7TqK0RnaU3a-15" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:#e4e4e4;padding:2px;&quot;&gt;booking-reminder-report&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;accommodation-confirmation-report-id&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;visitor-id&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;accommodation-id&lt;br&gt;...&lt;br&gt;example-field-N&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="680" y="840" width="220" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="42Mcp5apY7TqK0RnaU3a-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="42Mcp5apY7TqK0RnaU3a-16" target="42Mcp5apY7TqK0RnaU3a-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="42Mcp5apY7TqK0RnaU3a-16" value="BookingReminderReport" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="680" y="520" width="220" height="238" as="geometry" />
+        </mxCell>
+        <mxCell id="42Mcp5apY7TqK0RnaU3a-17" value="&lt;div&gt;+ dto&lt;br&gt;&lt;/div&gt;&lt;div&gt;- accommodationConfirmationReportID&lt;/div&gt;&lt;div&gt;- visitor-id&lt;br&gt;&lt;/div&gt;&lt;div&gt;- accommodation-id&lt;/div&gt;&lt;div&gt;- start-date&lt;/div&gt;&lt;div&gt;- end-date&lt;/div&gt;&lt;div&gt;- check-in&lt;/div&gt;&lt;div&gt;- check-out&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="42Mcp5apY7TqK0RnaU3a-16">
+          <mxGeometry y="26" width="220" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="42Mcp5apY7TqK0RnaU3a-18" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="42Mcp5apY7TqK0RnaU3a-16">
+          <mxGeometry y="160" width="220" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="42Mcp5apY7TqK0RnaU3a-19" value="&lt;div&gt;+ createEmail(): Email @override&lt;/div&gt;&lt;div&gt;+ createPDF(): Document @override&lt;/div&gt;&lt;div&gt;- createDTO(): JSON @override&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="42Mcp5apY7TqK0RnaU3a-16">
+          <mxGeometry y="168" width="220" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="42Mcp5apY7TqK0RnaU3a-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="42Mcp5apY7TqK0RnaU3a-23" target="42Mcp5apY7TqK0RnaU3a-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="42Mcp5apY7TqK0RnaU3a-23" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:#e4e4e4;padding:2px;&quot;&gt;taxi-confirmation-report&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;accommodation-confirmation-report-id&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;visitor-id&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;accommodation-id&lt;br&gt;...&lt;br&gt;example-field-N&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1000" y="840" width="220" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="42Mcp5apY7TqK0RnaU3a-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="42Mcp5apY7TqK0RnaU3a-24" target="42Mcp5apY7TqK0RnaU3a-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="42Mcp5apY7TqK0RnaU3a-24" value="TaxiConfirmationReport" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1000" y="520" width="220" height="238" as="geometry" />
+        </mxCell>
+        <mxCell id="42Mcp5apY7TqK0RnaU3a-25" value="&lt;div&gt;+ dto&lt;br&gt;&lt;/div&gt;&lt;div&gt;- accommodationConfirmationReportID&lt;/div&gt;&lt;div&gt;- visitor-id&lt;br&gt;&lt;/div&gt;&lt;div&gt;- accommodation-id&lt;/div&gt;&lt;div&gt;- start-date&lt;/div&gt;&lt;div&gt;- end-date&lt;/div&gt;&lt;div&gt;- check-in&lt;/div&gt;&lt;div&gt;- check-out&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="42Mcp5apY7TqK0RnaU3a-24">
+          <mxGeometry y="26" width="220" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="42Mcp5apY7TqK0RnaU3a-26" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="42Mcp5apY7TqK0RnaU3a-24">
+          <mxGeometry y="160" width="220" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="42Mcp5apY7TqK0RnaU3a-27" value="&lt;div&gt;+ createEmail(): Email @override&lt;/div&gt;&lt;div&gt;+ createPDF(): Document @override&lt;/div&gt;&lt;div&gt;- createDTO(): JSON @override&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="42Mcp5apY7TqK0RnaU3a-24">
+          <mxGeometry y="168" width="220" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
