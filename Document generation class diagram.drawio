@@ -1,35 +1,35 @@
-<mxfile host="app.diagrams.net" modified="2024-02-20T21:17:43.401Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0" etag="NQy6ojYCn8xS2Ci3vVox" version="23.1.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-22T17:16:05.865Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0" etag="oxxrVGFO-5LVAc1gSdav" version="23.1.5" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1050" dy="634" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="MQ1HAu035y0CXCqz7wdD-0" value="ReportsResource" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="170" y="80" width="420" height="138" as="geometry" />
+          <mxGeometry x="128" y="71" width="545" height="138" as="geometry" />
         </mxCell>
         <mxCell id="MQ1HAu035y0CXCqz7wdD-1" value="&lt;div&gt;- context: ContainerRequestContext&lt;/div&gt;&lt;div&gt;- service: ReportService&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="MQ1HAu035y0CXCqz7wdD-0" vertex="1">
-          <mxGeometry y="26" width="420" height="54" as="geometry" />
+          <mxGeometry y="26" width="545" height="54" as="geometry" />
         </mxCell>
         <mxCell id="MQ1HAu035y0CXCqz7wdD-2" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="MQ1HAu035y0CXCqz7wdD-0" vertex="1">
-          <mxGeometry y="80" width="420" height="8" as="geometry" />
+          <mxGeometry y="80" width="545" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="MQ1HAu035y0CXCqz7wdD-3" value="&lt;div&gt;+ getReport(Long id): Report&lt;/div&gt;&lt;div&gt;+ updateReport(ReportDTO dto, Long id): ReportDTO&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ deleteReport(Long id): void&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="MQ1HAu035y0CXCqz7wdD-0" vertex="1">
-          <mxGeometry y="88" width="420" height="50" as="geometry" />
+        <mxCell id="MQ1HAu035y0CXCqz7wdD-3" value="&lt;div&gt;+ getWelcome(): Report&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ getReports(Long id, String format, String selection, Long visitorID, String status): List&amp;lt;Report&amp;gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="MQ1HAu035y0CXCqz7wdD-0" vertex="1">
+          <mxGeometry y="88" width="545" height="50" as="geometry" />
         </mxCell>
         <mxCell id="MQ1HAu035y0CXCqz7wdD-4" value="ReportService" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="577" y="253" width="250" height="180" as="geometry" />
+          <mxGeometry x="423" y="270" width="394" height="192" as="geometry" />
         </mxCell>
         <mxCell id="MQ1HAu035y0CXCqz7wdD-5" value="&lt;div&gt;- em: EntityManager&lt;/div&gt;&lt;div&gt;- repo: ReportRepo&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="MQ1HAu035y0CXCqz7wdD-4" vertex="1">
-          <mxGeometry y="26" width="250" height="54" as="geometry" />
+          <mxGeometry y="26" width="394" height="54" as="geometry" />
         </mxCell>
         <mxCell id="MQ1HAu035y0CXCqz7wdD-6" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="MQ1HAu035y0CXCqz7wdD-4" vertex="1">
-          <mxGeometry y="80" width="250" height="8" as="geometry" />
+          <mxGeometry y="80" width="394" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="MQ1HAu035y0CXCqz7wdD-7" value="&lt;div&gt;+ createReport()&lt;/div&gt;&lt;div&gt;+ getReport()&lt;/div&gt;&lt;div&gt;+ updateReport(Long id, ReportDTO dto, CallerDetails caller)&lt;/div&gt;&lt;div&gt;+ deleteReport()&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="MQ1HAu035y0CXCqz7wdD-4" vertex="1">
-          <mxGeometry y="88" width="250" height="92" as="geometry" />
+        <mxCell id="MQ1HAu035y0CXCqz7wdD-7" value="&lt;div&gt;+ createReport(): void&lt;/div&gt;&lt;div&gt;+ getLatestReportOfType(String s): Report&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ getReports(): List&amp;lt;Report&amp;gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ getWelcome(): Report&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ updateReport(Long id, ReportDTO dto, CallerDetails caller): Report&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ deleteReport(): void&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="MQ1HAu035y0CXCqz7wdD-4" vertex="1">
+          <mxGeometry y="88" width="394" height="104" as="geometry" />
         </mxCell>
         <mxCell id="MQ1HAu035y0CXCqz7wdD-16" value="Report" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="70" y="300" width="230" height="110" as="geometry" />
+          <mxGeometry x="72" y="300" width="230" height="110" as="geometry" />
         </mxCell>
         <mxCell id="MQ1HAu035y0CXCqz7wdD-17" value="+ dto" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="MQ1HAu035y0CXCqz7wdD-16" vertex="1">
           <mxGeometry y="26" width="230" height="26" as="geometry" />
@@ -40,17 +40,17 @@
         <mxCell id="MQ1HAu035y0CXCqz7wdD-19" value="&lt;div&gt;+ createEmail(): Email&lt;/div&gt;&lt;div&gt;+ createPDF(): Document&lt;/div&gt;&lt;div&gt;- createDTO(): JSON&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="MQ1HAu035y0CXCqz7wdD-16" vertex="1">
           <mxGeometry y="60" width="230" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="PVmrrX6DhiQdUhVUVksZ-0" value="This class will store a DTO as an attribute. When the constructor is called, a custom DTO will be built (due to the heterogeneity of the underlying report data) and then saved to the public DTO field" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="310" y="278" width="250" height="130" as="geometry" />
-        </mxCell>
-        <mxCell id="IxwAe-7UypKO3zCtjmv_-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Wsk4VO05oJbZmP9Lk-0c-0" target="Wsk4VO05oJbZmP9Lk-0c-2">
+        <mxCell id="IxwAe-7UypKO3zCtjmv_-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Wsk4VO05oJbZmP9Lk-0c-0" target="Wsk4VO05oJbZmP9Lk-0c-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Wsk4VO05oJbZmP9Lk-0c-0" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:#e4e4e4;padding:2px;&quot;&gt;example-report&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;example-report-id&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;example-field-1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;example-field-2&lt;br&gt;...&lt;br&gt;example-field-N&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="80" y="740" width="220" height="120" as="geometry" />
+          <mxGeometry x="75" y="739" width="220" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="42Mcp5apY7TqK0RnaU3a-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.491;entryY=1.02;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Wsk4VO05oJbZmP9Lk-0c-1" target="MQ1HAu035y0CXCqz7wdD-19">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Wsk4VO05oJbZmP9Lk-0c-1" value="ExampleReport" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="80" y="520" width="220" height="188" as="geometry" />
+          <mxGeometry x="75" y="519" width="220" height="188" as="geometry" />
         </mxCell>
         <mxCell id="Wsk4VO05oJbZmP9Lk-0c-2" value="&lt;div&gt;+ dto&lt;br&gt;&lt;/div&gt;&lt;div&gt;- exampleReportID&lt;/div&gt;&lt;div&gt;- exampleField1&lt;/div&gt;&lt;div&gt;- exampleField2&lt;br&gt;&lt;/div&gt;&lt;div&gt;...&lt;/div&gt;&lt;div&gt;- exampleFieldN&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontColor=#333333;" parent="Wsk4VO05oJbZmP9Lk-0c-1" vertex="1">
           <mxGeometry y="26" width="220" height="92" as="geometry" />
@@ -58,19 +58,19 @@
         <mxCell id="Wsk4VO05oJbZmP9Lk-0c-4" value="&lt;div&gt;+ createEmail(): Email @override&lt;/div&gt;&lt;div&gt;+ createPDF(): Document @override&lt;/div&gt;&lt;div&gt;- createDTO(): JSON @override&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontColor=#333333;" parent="Wsk4VO05oJbZmP9Lk-0c-1" vertex="1">
           <mxGeometry y="118" width="220" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="IxwAe-7UypKO3zCtjmv_-0" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:#e4e4e4;padding:2px;&quot;&gt;accommodation-confirmation-report&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;accommodation-confirmation-report-id&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;visitor-id&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;accommodation-id&lt;br&gt;...&lt;br&gt;example-field-N&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="IxwAe-7UypKO3zCtjmv_-0" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:#e4e4e4;padding:2px;&quot;&gt;accommodation-confirmation-report&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;accommodation-confirmation-report-id&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;visitor-id&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;accommodation-id&lt;br&gt;...&lt;br&gt;example-field-N&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="330" y="740" width="220" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="IxwAe-7UypKO3zCtjmv_-1" value="AccommodationConfirmationReport" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="IxwAe-7UypKO3zCtjmv_-1" value="AccommodationConfirmationReport" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="330" y="520" width="220" height="196" as="geometry" />
         </mxCell>
-        <mxCell id="IxwAe-7UypKO3zCtjmv_-2" value="&lt;div&gt;+ dto&lt;br&gt;&lt;/div&gt;&lt;div&gt;- exampleReportID&lt;/div&gt;&lt;div&gt;- exampleField1&lt;/div&gt;&lt;div&gt;- exampleField2&lt;br&gt;&lt;/div&gt;&lt;div&gt;...&lt;/div&gt;&lt;div&gt;- exampleFieldN&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="IxwAe-7UypKO3zCtjmv_-1">
+        <mxCell id="IxwAe-7UypKO3zCtjmv_-2" value="&lt;div&gt;+ dto&lt;br&gt;&lt;/div&gt;&lt;div&gt;- exampleReportID&lt;/div&gt;&lt;div&gt;- exampleField1&lt;/div&gt;&lt;div&gt;- exampleField2&lt;br&gt;&lt;/div&gt;&lt;div&gt;...&lt;/div&gt;&lt;div&gt;- exampleFieldN&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="IxwAe-7UypKO3zCtjmv_-1" vertex="1">
           <mxGeometry y="26" width="220" height="92" as="geometry" />
         </mxCell>
-        <mxCell id="IxwAe-7UypKO3zCtjmv_-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="IxwAe-7UypKO3zCtjmv_-1">
+        <mxCell id="IxwAe-7UypKO3zCtjmv_-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="IxwAe-7UypKO3zCtjmv_-1" vertex="1">
           <mxGeometry y="118" width="220" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="IxwAe-7UypKO3zCtjmv_-4" value="&lt;div&gt;+ createEmail(): Email @override&lt;/div&gt;&lt;div&gt;+ createPDF(): Document @override&lt;/div&gt;&lt;div&gt;- createDTO(): JSON @override&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="IxwAe-7UypKO3zCtjmv_-1">
+        <mxCell id="IxwAe-7UypKO3zCtjmv_-4" value="&lt;div&gt;+ createEmail(): Email @override&lt;/div&gt;&lt;div&gt;+ createPDF(): Document @override&lt;/div&gt;&lt;div&gt;- createDTO(): JSON @override&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="IxwAe-7UypKO3zCtjmv_-1" vertex="1">
           <mxGeometry y="126" width="220" height="70" as="geometry" />
         </mxCell>
       </root>
