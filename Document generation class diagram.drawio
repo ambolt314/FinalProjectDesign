@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-27T19:44:24.423Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0" etag="1-XpLpidWoDKEXOgAidq" version="23.1.6" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-28T17:29:22.725Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0" etag="MTd2Qb_uU1wuOK1yc8On" version="23.1.7" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1050" dy="634" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -28,7 +28,7 @@
         <mxCell id="MQ1HAu035y0CXCqz7wdD-6" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="MQ1HAu035y0CXCqz7wdD-4" vertex="1">
           <mxGeometry y="80" width="394" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="MQ1HAu035y0CXCqz7wdD-7" value="&lt;div&gt;+ createReport(): void&lt;/div&gt;&lt;div&gt;+ getLatestReportOfType(String s): Report&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ getReports(): List&amp;lt;Report&amp;gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ getWelcome(): Report&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ updateReport(Long id, ReportDTO dto, CallerDetails caller): Report&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ deleteReport(): void&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="MQ1HAu035y0CXCqz7wdD-4" vertex="1">
+        <mxCell id="MQ1HAu035y0CXCqz7wdD-7" value="&lt;div&gt;+ createReport(): void&lt;/div&gt;&lt;div&gt;+ getLatestReportOfType(String type): Report&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ getReports(): List&amp;lt;Report&amp;gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ getWelcome(): Report&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ updateReport(Long id, Report report, CallerDetails caller): Report&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ deleteReport(): void&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="MQ1HAu035y0CXCqz7wdD-4" vertex="1">
           <mxGeometry y="88" width="394" height="104" as="geometry" />
         </mxCell>
         <mxCell id="MQ1HAu035y0CXCqz7wdD-16" value="Report" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
