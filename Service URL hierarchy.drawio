@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-02-28T14:10:16.792Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0" etag="q7A1t7cTnc-WAxIgOIY6" version="23.1.7" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-28T14:11:58.120Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0" etag="6P7xDRWEggpq6YcesmyO" version="23.1.7" type="github">
   <diagram name="Page-1" id="lkIzZtKHE2g4b-k83Zns">
-    <mxGraphModel dx="1877" dy="634" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2227" dy="845" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -118,7 +118,7 @@
           <mxGeometry x="-610" y="205" width="280" height="30" as="geometry" />
         </mxCell>
         <mxCell id="cFXvyy3T8Uc6k7l6PIuW-34" value="&lt;u&gt;Query parameters&lt;br&gt;&lt;/u&gt;&lt;div align=&quot;left&quot;&gt;This layer denotes the query parameters that may be optionally appended to the end of each report to gain specific data&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry y="510" width="280" height="30" as="geometry" />
+          <mxGeometry x="-610" y="510" width="280" height="30" as="geometry" />
         </mxCell>
         <mxCell id="cFXvyy3T8Uc6k7l6PIuW-39" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="300" y="462.5" width="120" height="125" as="geometry" />
@@ -157,7 +157,7 @@
           <mxGeometry y="25" width="120" height="100" as="geometry" />
         </mxCell>
         <mxCell id="cFXvyy3T8Uc6k7l6PIuW-49" value="&lt;div align=&quot;left&quot;&gt;&lt;u&gt;Example&lt;/u&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;i&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;https://office.localhost/visits-service/reports/booking-reminder?format=email&lt;/b&gt;&lt;/font&gt;&lt;/i&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="-340" y="600" width="750" height="30" as="geometry" />
+          <mxGeometry x="-610" y="630" width="750" height="30" as="geometry" />
         </mxCell>
         <mxCell id="h1pRsVhyzems_VzTcCOB-1" value="/expenses-reminder" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="90" y="340" width="120" height="60" as="geometry" />
