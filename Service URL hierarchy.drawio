@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-05T20:57:10.294Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0" etag="zbmiTShYo30i6vmbnqCD" version="24.0.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-05T21:04:24.358Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0" etag="P-vUiA_d-ZifbtrbpN2_" version="24.0.1" type="github">
   <diagram name="Page-1" id="lkIzZtKHE2g4b-k83Zns">
     <mxGraphModel dx="1877" dy="1803" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -16,14 +16,38 @@
         <mxCell id="SzScdwgrWjmyck-_DvYI-13" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="cFXvyy3T8Uc6k7l6PIuW-1" target="cFXvyy3T8Uc6k7l6PIuW-6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="SzScdwgrWjmyck-_DvYI-14" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="cFXvyy3T8Uc6k7l6PIuW-1" target="cFXvyy3T8Uc6k7l6PIuW-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SzScdwgrWjmyck-_DvYI-15" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="cFXvyy3T8Uc6k7l6PIuW-1" target="cFXvyy3T8Uc6k7l6PIuW-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SzScdwgrWjmyck-_DvYI-16" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="cFXvyy3T8Uc6k7l6PIuW-1" target="cFXvyy3T8Uc6k7l6PIuW-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SzScdwgrWjmyck-_DvYI-17" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="cFXvyy3T8Uc6k7l6PIuW-1" target="cFXvyy3T8Uc6k7l6PIuW-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="cFXvyy3T8Uc6k7l6PIuW-1" value="/visits-service" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="520" y="-80" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="cFXvyy3T8Uc6k7l6PIuW-2" value="/airports" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
           <mxGeometry x="70" y="50" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="SzScdwgrWjmyck-_DvYI-28" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="cFXvyy3T8Uc6k7l6PIuW-3" target="cFXvyy3T8Uc6k7l6PIuW-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SzScdwgrWjmyck-_DvYI-29" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="cFXvyy3T8Uc6k7l6PIuW-3" target="cFXvyy3T8Uc6k7l6PIuW-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SzScdwgrWjmyck-_DvYI-30" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="cFXvyy3T8Uc6k7l6PIuW-3" target="h1pRsVhyzems_VzTcCOB-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SzScdwgrWjmyck-_DvYI-31" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="cFXvyy3T8Uc6k7l6PIuW-3" target="h1pRsVhyzems_VzTcCOB-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="cFXvyy3T8Uc6k7l6PIuW-3" value="/email" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="411" y="200" width="120" height="60" as="geometry" />
+          <mxGeometry x="220" y="200" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="cFXvyy3T8Uc6k7l6PIuW-4" value="/visit-confirmation" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="560" y="430" width="120" height="60" as="geometry" />
@@ -55,7 +79,7 @@
         <mxCell id="cFXvyy3T8Uc6k7l6PIuW-23" value="/booking-reminder" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-120" y="340" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="cFXvyy3T8Uc6k7l6PIuW-25" value="&lt;div align=&quot;left&quot;&gt;&lt;u&gt;Service layer&lt;/u&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;This is the top layer, through which all endpoints are accessed. This layer is the endpoint for the service, which is an application that has been deployed to Docker&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+        <mxCell id="cFXvyy3T8Uc6k7l6PIuW-25" value="&lt;div align=&quot;left&quot;&gt;&lt;u&gt;Domain layer&lt;/u&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;This is the top layer, through which all endpoints are accessed. This layer is the endpoint for the service, which is an application that has been deployed to Docker&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-610" y="-60" width="280" height="30" as="geometry" />
         </mxCell>
         <mxCell id="cFXvyy3T8Uc6k7l6PIuW-26" value="&lt;u&gt;Report layer&lt;br&gt;&lt;/u&gt;&lt;div align=&quot;left&quot;&gt;This layer describes the types of reports a user can request from /reports endpoint.&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
@@ -98,13 +122,28 @@
           <mxGeometry x="541" y="-220" width="78" height="78" as="geometry" />
         </mxCell>
         <mxCell id="SzScdwgrWjmyck-_DvYI-3" value="&lt;div&gt;/letter&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="609" y="200" width="120" height="60" as="geometry" />
+          <mxGeometry x="820.5" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SzScdwgrWjmyck-_DvYI-19" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="SzScdwgrWjmyck-_DvYI-8" target="cFXvyy3T8Uc6k7l6PIuW-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SzScdwgrWjmyck-_DvYI-20" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="SzScdwgrWjmyck-_DvYI-8" target="SzScdwgrWjmyck-_DvYI-3">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="SzScdwgrWjmyck-_DvYI-8" value="&lt;div&gt;/document-generator&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="520" y="50" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="SzScdwgrWjmyck-_DvYI-12" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.425;entryY=0.033;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="cFXvyy3T8Uc6k7l6PIuW-1" target="cFXvyy3T8Uc6k7l6PIuW-2">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SzScdwgrWjmyck-_DvYI-18" value="&lt;div align=&quot;left&quot;&gt;&lt;u&gt;Microservice layer&lt;/u&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;These are services which are accessible from /visits-service. Each performs a specific REST service&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-610" y="65" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SzScdwgrWjmyck-_DvYI-23" value="?raw=false" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="120" y="455" width="220" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="SzScdwgrWjmyck-_DvYI-24" value="&lt;div&gt;By adding this query parameter, users have the option of retrieving the report data as JSON.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;If no value is given, this will default to false&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="SzScdwgrWjmyck-_DvYI-23">
+          <mxGeometry y="30" width="220" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
