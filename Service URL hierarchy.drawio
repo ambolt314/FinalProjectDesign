@@ -1,9 +1,12 @@
-<mxfile host="app.diagrams.net" modified="2024-03-21T19:12:28.045Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:124.0) Gecko/20100101 Firefox/124.0" etag="dxPjBIovM8RqyM1ECNVn" version="24.0.7" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-21T19:20:11.629Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:124.0) Gecko/20100101 Firefox/124.0" etag="004CVRNrYMpJQXXjNRan" version="24.0.7" type="github">
   <diagram name="Page-1" id="lkIzZtKHE2g4b-k83Zns">
     <mxGraphModel dx="1877" dy="634" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="SzScdwgrWjmyck-_DvYI-41" value="Persistence Layer" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="-320" y="555" width="1550" height="145" as="geometry" />
+        </mxCell>
         <mxCell id="SzScdwgrWjmyck-_DvYI-10" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="cFXvyy3T8Uc6k7l6PIuW-1" target="cFXvyy3T8Uc6k7l6PIuW-9" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -56,7 +59,7 @@
           <mxGeometry x="527" y="377" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="cFXvyy3T8Uc6k7l6PIuW-4" value="/visit-confirmation" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="272" y="667" width="120" height="60" as="geometry" />
+          <mxGeometry x="390" y="520" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="cFXvyy3T8Uc6k7l6PIuW-5" value="/visit-requests" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
           <mxGeometry x="1005" y="377" width="120" height="60" as="geometry" />
@@ -80,46 +83,43 @@
           <mxGeometry x="1327.5" y="377" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="cFXvyy3T8Uc6k7l6PIuW-22" value="/taxi-confirmation" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="522" y="667" width="120" height="60" as="geometry" />
+          <mxGeometry x="527" y="520" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="cFXvyy3T8Uc6k7l6PIuW-23" value="/booking-reminder" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="-380" y="667" width="120" height="60" as="geometry" />
+          <mxGeometry x="-170" y="520" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="cFXvyy3T8Uc6k7l6PIuW-25" value="&lt;div align=&quot;left&quot;&gt;&lt;u&gt;Domain layer&lt;/u&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;This is the top layer, through which all endpoints are accessed. This layer is the endpoint for the service, which is an application that has been deployed to Docker&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="-822" y="261" width="280" height="30" as="geometry" />
+          <mxGeometry x="-621" y="230" width="280" height="30" as="geometry" />
         </mxCell>
         <mxCell id="cFXvyy3T8Uc6k7l6PIuW-26" value="&lt;u&gt;Document layer&lt;br&gt;&lt;/u&gt;&lt;div align=&quot;left&quot;&gt;This layer describes the types of reports a user can request from the respective endpoint.&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="-822" y="682" width="280" height="30" as="geometry" />
+          <mxGeometry x="-621" y="535" width="280" height="30" as="geometry" />
         </mxCell>
         <mxCell id="cFXvyy3T8Uc6k7l6PIuW-27" value="/accommodation-confirmation" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="-528" y="667" width="120" height="60" as="geometry" />
+          <mxGeometry x="-310" y="520" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="cFXvyy3T8Uc6k7l6PIuW-33" value="&lt;u&gt;Endpoint layer&lt;/u&gt;&lt;div align=&quot;left&quot;&gt;This layer details the exact services, implemented as REST API endpoints, from the Visits application. The set is not comprehensive, and is illustrative of the directory structure in which /reports resides&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="-822" y="392" width="280" height="30" as="geometry" />
+          <mxGeometry x="-621" y="392" width="280" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="cFXvyy3T8Uc6k7l6PIuW-49" value="&lt;div align=&quot;left&quot;&gt;&lt;font color=&quot;#1ba1e2&quot;&gt;&lt;i&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;https://office.localhost/visits-service/document-generator/email/taxi-confirmation&lt;/b&gt;&lt;/font&gt;&lt;/i&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="308" y="200" width="708" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="h1pRsVhyzems_VzTcCOB-1" value="/expenses-reminder" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="-228" y="667" width="120" height="60" as="geometry" />
+        <mxCell id="cFXvyy3T8Uc6k7l6PIuW-49" value="&lt;div align=&quot;center&quot;&gt;&lt;font color=&quot;#1ba1e2&quot;&gt;&lt;i&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;https://office.localhost/visits-service/emails/accommodation-confirmation&lt;/b&gt;&lt;/font&gt;&lt;/i&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-160" y="131" width="708" height="30" as="geometry" />
         </mxCell>
         <mxCell id="h1pRsVhyzems_VzTcCOB-3" value="/invitation-letter" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="981" y="667" width="120" height="60" as="geometry" />
+          <mxGeometry x="685" y="520" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="h1pRsVhyzems_VzTcCOB-5" value="/pass-summary" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1282" y="667" width="120" height="60" as="geometry" />
+          <mxGeometry x="960" y="520" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="h1pRsVhyzems_VzTcCOB-6" value="/post-experiment-visit" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1431" y="667" width="120" height="60" as="geometry" />
+          <mxGeometry x="1100" y="520" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="h1pRsVhyzems_VzTcCOB-7" value="/safety-test-reminder" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="72" y="667" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="h1pRsVhyzems_VzTcCOB-8" value="/emergency-contact-reminder" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="-78" y="667" width="120" height="60" as="geometry" />
+          <mxGeometry x="250" y="520" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="h1pRsVhyzems_VzTcCOB-13" value="/user-satisfaction" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1131" y="667" width="120" height="60" as="geometry" />
+          <mxGeometry x="820" y="520" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OEsUPNy_qralYiwzX7oM-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeWidth=3;strokeColor=#1ba1e2;" edge="1" parent="1" source="SzScdwgrWjmyck-_DvYI-2" target="cFXvyy3T8Uc6k7l6PIuW-1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="SzScdwgrWjmyck-_DvYI-2" value="" style="sketch=0;outlineConnect=0;fillColor=#1BA1E2;strokeColor=#006EAF;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.globe;fontColor=#ffffff;" parent="1" vertex="1">
           <mxGeometry x="623" y="107" width="78" height="78" as="geometry" />
@@ -153,43 +153,28 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="SzScdwgrWjmyck-_DvYI-40" value="&lt;u&gt;Persistence layer&lt;br&gt;&lt;/u&gt;&lt;div align=&quot;left&quot;&gt;This layer implements persistent storage of the information in the Report layer. &lt;b&gt;&lt;u&gt;This will be a future development in later versions&lt;/u&gt;&lt;/b&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="-822" y="767" width="280" height="30" as="geometry" />
+          <mxGeometry x="-310" y="612.5" width="280" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="SzScdwgrWjmyck-_DvYI-43" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.1;exitY=0.012;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="SzScdwgrWjmyck-_DvYI-41" target="cFXvyy3T8Uc6k7l6PIuW-23" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="OEsUPNy_qralYiwzX7oM-1" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="cFXvyy3T8Uc6k7l6PIuW-3" target="h1pRsVhyzems_VzTcCOB-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="587" y="437" as="sourcePoint" />
+            <mxPoint x="-168" y="667" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="SzScdwgrWjmyck-_DvYI-44" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.173;exitY=0.071;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="SzScdwgrWjmyck-_DvYI-41" target="h1pRsVhyzems_VzTcCOB-1" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="h1pRsVhyzems_VzTcCOB-8" value="/emergency-contact-reminder" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="110" y="520" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="SzScdwgrWjmyck-_DvYI-45" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.245;exitY=0.048;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="SzScdwgrWjmyck-_DvYI-41" target="h1pRsVhyzems_VzTcCOB-8" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="OEsUPNy_qralYiwzX7oM-2" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="cFXvyy3T8Uc6k7l6PIuW-3" target="h1pRsVhyzems_VzTcCOB-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="587" y="437" as="sourcePoint" />
+            <mxPoint x="-468" y="667" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="SzScdwgrWjmyck-_DvYI-46" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.317;exitY=0.053;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="SzScdwgrWjmyck-_DvYI-41" target="h1pRsVhyzems_VzTcCOB-7" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="h1pRsVhyzems_VzTcCOB-1" value="/expenses-reminder" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-30" y="520" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="SzScdwgrWjmyck-_DvYI-48" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.414;exitY=0.117;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="SzScdwgrWjmyck-_DvYI-41" target="cFXvyy3T8Uc6k7l6PIuW-4" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="SzScdwgrWjmyck-_DvYI-49" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.534;exitY=0.042;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="SzScdwgrWjmyck-_DvYI-41" target="cFXvyy3T8Uc6k7l6PIuW-22" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="SzScdwgrWjmyck-_DvYI-50" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.754;exitY=0.025;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="SzScdwgrWjmyck-_DvYI-41" target="h1pRsVhyzems_VzTcCOB-3" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="SzScdwgrWjmyck-_DvYI-51" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.827;exitY=0.065;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="SzScdwgrWjmyck-_DvYI-41" target="h1pRsVhyzems_VzTcCOB-13" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="SzScdwgrWjmyck-_DvYI-52" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.899;exitY=0.051;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="SzScdwgrWjmyck-_DvYI-41" target="h1pRsVhyzems_VzTcCOB-5" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="SzScdwgrWjmyck-_DvYI-53" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.971;exitY=0.08;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="SzScdwgrWjmyck-_DvYI-41" target="h1pRsVhyzems_VzTcCOB-6" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="SzScdwgrWjmyck-_DvYI-41" value="Persistence Layer" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
-          <mxGeometry x="-528" y="757" width="2080" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="SzScdwgrWjmyck-_DvYI-42" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.029;exitY=0.017;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="SzScdwgrWjmyck-_DvYI-41" target="cFXvyy3T8Uc6k7l6PIuW-27" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="OEsUPNy_qralYiwzX7oM-3" value="&lt;div align=&quot;center&quot;&gt;&lt;font color=&quot;#1ba1e2&quot;&gt;&lt;i&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;https://office.localhost/visits-service/letters/invitation-letter&lt;/b&gt;&lt;/font&gt;&lt;/i&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="750" y="131" width="708" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
