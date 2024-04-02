@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-04-02T14:35:04.103Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:124.0) Gecko/20100101 Firefox/124.0" etag="NSzP6h0P7byA3GJzOl8K" version="24.2.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-02T15:18:22.051Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:124.0) Gecko/20100101 Firefox/124.0" etag="0CdXVxXtBwm-Det6Y4bH" version="24.2.1" type="github">
   <diagram name="Page-1" id="lkIzZtKHE2g4b-k83Zns">
-    <mxGraphModel dx="2577" dy="1057" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2927" dy="1268" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -170,7 +170,7 @@
         <mxCell id="h1pRsVhyzems_VzTcCOB-1" value="/emergency-contact-reminder" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-30" y="520" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="OEsUPNy_qralYiwzX7oM-3" value="&lt;div align=&quot;center&quot;&gt;&lt;font color=&quot;#1ba1e2&quot;&gt;&lt;i&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;https://office.localhost/visits-service/letters/invitation-letter?user=-1234&lt;/b&gt;&lt;/font&gt;&lt;/i&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+        <mxCell id="OEsUPNy_qralYiwzX7oM-3" value="&lt;div align=&quot;center&quot;&gt;&lt;font color=&quot;#1ba1e2&quot;&gt;&lt;i&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;https://office.localhost/visits-service/letter-contents/invitation-letter?user=-1234&lt;/b&gt;&lt;/font&gt;&lt;/i&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="750" y="131" width="708" height="30" as="geometry" />
         </mxCell>
       </root>
