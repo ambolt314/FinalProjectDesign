@@ -2,6 +2,7 @@ package com.amb;
 
 import sun.net.www.protocol.mailto.MailToURLConnection;
 
+import java.awt.*;
 import java.io.IOException;
 import java.net.*;
 
@@ -12,13 +13,23 @@ public class EmailGenerator {
     public EmailGenerator() {
     }
 
-    public static void generateMailTo() throws IOException {
-        EmailDocument document = service.getEmailDocument();
+    public static void generateMailTo() throws IOException, URISyntaxException {
 
-        String EMAIL_GEN_URL = "mailto:" + document.to;
-        URL url = new URL(EMAIL_GEN_URL);
+        EmailDocument document = service.getEmailDocument(EmailType.C);
 
-        MailToURLConnection connection = new MailToURLConnection(url);
+        String uriStr = String.format("mailto:%s?subject=%s&body=%s",
+                document.to,
+                uriEncode(document.subject),
+                uriEncode(document.body));
 
+        URI uri = new URI(uriStr);
+        Desktop.getDesktop().mail(uri);
+
+    }
+
+    public static String uriEncode(String s) {
+        return s.replace(" ", "%20")
+                .replace("\n", "%0A")
+                .replace("\r", "%0D");
     }
 }

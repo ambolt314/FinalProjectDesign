@@ -2,7 +2,7 @@ package com.amb;
 
 public class Service {
 
-    public EmailDocument getEmailDocument() {
-        return new EmailDocument(EmailType.A);
+    public EmailDocument getEmailDocument(EmailType type) {
+        return new EmailDocument(type);
     }
 }

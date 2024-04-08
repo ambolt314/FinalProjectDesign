@@ -48,18 +48,21 @@ public class EmailDocument {
                 this.setCc("user-office@email.com");
                 this.setSubject("Email type A");
                 this.setBody("A test email");
+                break;
             }
             case B: {
                 this.setTo("B-someone@email.com");
                 this.setCc("user-office@email.com");
                 this.setSubject("Email type B");
                 this.setBody("B test email");
+                break;
             }
             case C: {
                 this.setTo("C-that-person@email.com");
                 this.setCc("user-office@email.com");
                 this.setSubject("Email type C");
                 this.setBody("C test email");
+                break;
             }
         }
     }
