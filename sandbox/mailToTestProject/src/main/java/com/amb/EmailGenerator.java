@@ -1,5 +1,7 @@
 package com.amb;
 
+import sun.net.www.protocol.mailto.MailToURLConnection;
+
 import java.io.IOException;
 import java.net.*;
 
@@ -16,7 +18,7 @@ public class EmailGenerator {
         String EMAIL_GEN_URL = "mailto:" + document.to;
         URL url = new URL(EMAIL_GEN_URL);
 
-        HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-        connection.setRequestMethod("GET");
+        MailToURLConnection connection = new MailToURLConnection(url);
+
     }
 }
