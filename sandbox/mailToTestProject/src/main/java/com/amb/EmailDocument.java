@@ -73,7 +73,14 @@ public class EmailDocument {
                 AService aService = new AService();
                 ADTO adto = aService.getAByID(1); //this would be based on the caller details
                 String bodyTemplate = getEmailBodyFromFile("C:\\Programming\\FinalProjectDesign\\sandbox\\mailToTestProject\\src\\main\\java\\com\\amb\\AServices\\A-body-template.txt");
-                String body = String.format(bodyTemplate, this.getToName(), adto.getName(), adto.getId(), adto.getFacilityReference(), adto.getBreakingBadReference());
+                String body = String.format(
+                        bodyTemplate,
+                        this.getToName(),
+                        adto.getName(),
+                        adto.getId(),
+                        adto.getFacilityReference(),
+                        adto.getBreakingBadReference()
+                );
                 this.setBody(body);
 
                 break;
@@ -86,12 +93,26 @@ public class EmailDocument {
 
                 //Email body logic
                 BeaService beaService = new BeaService();
-                BeaDTO beaDTO = beaService.getBeaById(1);
+                BeaDTO beaDTO = beaService.getBeaById(2);
 
                 BeeService beeService = new BeeService();
-                BeeDTO beedto = beeService.getBeeById(1);
+                BeeDTO beeDTO = beeService.getBeeById(1);
 
-                this.setBody(getEmailBodyFromFile("C:\\Programming\\FinalProjectDesign\\sandbox\\mailToTestProject\\src\\main\\java\\com\\amb\\B-body-template.txt"));
+                String bodyTemplate = getEmailBodyFromFile("C:\\Programming\\FinalProjectDesign\\sandbox\\mailToTestProject\\src\\main\\java\\com\\amb\\BServices\\B-body-template.txt");
+                String body = String.format(
+                        bodyTemplate,
+                        beaDTO.getForename(),
+                        beaDTO.getSurname(),
+                        beaDTO.getIsPrincessBeatrice() ? "Royal Highness' " : "",
+                        beaDTO.getIsPrincessBeatrice() ? "Royal Highness' " : "",
+                        beaDTO.getArrivalTime(),
+                        beaDTO.getIsPrincessBeatrice() ? "r Royal Highness" : "",
+                        beeDTO.getName(),
+                        beeDTO.getFavouriteNumber(),
+                        beeDTO.getQueen()
+                );
+
+                this.setBody(body);
                 break;
             }
             case C: {
@@ -99,7 +120,7 @@ public class EmailDocument {
                 this.setToName("C That-Person");
                 this.setCc("user-office@email.com");
                 this.setSubject("Email type C");
-                this.setBody(getEmailBodyFromFile("C:\\Programming\\FinalProjectDesign\\sandbox\\mailToTestProject\\src\\main\\java\\com\\amb\\C-body.txt"));
+                this.setBody(getEmailBodyFromFile("C:\\Programming\\FinalProjectDesign\\sandbox\\mailToTestProject\\src\\main\\java\\com\\amb\\CServices\\C-body-template.txt"));
                 break;
             }
         }

@@ -45,7 +45,7 @@ public class BeaDTO {
         this.surname = surname;
     }
 
-    public boolean isPrincessBeatrice() {
+    public boolean getIsPrincessBeatrice() {
         return isPrincessBeatrice;
     }
 

@@ -1,5 +1,3 @@
-%s,
-
 Ta. This is email C.
 
 UO
