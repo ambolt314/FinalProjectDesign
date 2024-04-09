@@ -1,7 +1,5 @@
 package com.amb;
 
-import sun.net.www.protocol.mailto.MailToURLConnection;
-
 import java.awt.*;
 import java.io.IOException;
 import java.net.*;
@@ -15,19 +13,19 @@ public class EmailGenerator {
 
     public static void generateMailTo() throws IOException, URISyntaxException {
 
-        EmailDocument document = service.getEmailDocument(EmailType.C);
+        EmailDocument document = service.getEmailDocument(EmailType.B);
 
         String uriStr = String.format("mailto:%s?subject=%s&body=%s",
-                document.to,
-                uriEncode(document.subject),
-                uriEncode(document.body));
+                sanitise(document.to),
+                sanitise(document.subject),
+                sanitise(document.body));
 
         URI uri = new URI(uriStr);
         Desktop.getDesktop().mail(uri);
 
     }
 
-    public static String uriEncode(String s) {
+    private static String sanitise(String s) {
         return s.replace(" ", "%20")
                 .replace("\n", "%0A")
                 .replace("\r", "%0D");
