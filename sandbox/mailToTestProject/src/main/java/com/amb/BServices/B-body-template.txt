@@ -1,0 +1,10 @@
+To %s %s,
+
+Your %semail is most welcome and is duly received. It is of the type B.
+Your %svisit is scheduled to take place at %s
+
+You%s will be visited by a bee called %s.
+Her favourite number is %s and she serves the Queen Bee %s.
+
+Warmest Regards,
+User Office

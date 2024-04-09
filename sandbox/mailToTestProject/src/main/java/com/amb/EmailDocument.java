@@ -2,6 +2,10 @@ package com.amb;
 
 import com.amb.AServices.ADTO;
 import com.amb.AServices.AService;
+import com.amb.BServices.BeaDTO;
+import com.amb.BServices.BeaService;
+import com.amb.BServices.BeeDTO;
+import com.amb.BServices.BeeService;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -79,7 +83,15 @@ public class EmailDocument {
                 this.setToName("Be Someone");
                 this.setCc("user-office@email.com");
                 this.setSubject("Email type B");
-                this.setBody(getEmailBodyFromFile("C:\\Programming\\FinalProjectDesign\\sandbox\\mailToTestProject\\src\\main\\java\\com\\amb\\B-body.txt"));
+
+                //Email body logic
+                BeaService beaService = new BeaService();
+                BeaDTO beaDTO = beaService.getBeaById(1);
+
+                BeeService beeService = new BeeService();
+                BeeDTO beedto = beeService.getBeeById(1);
+
+                this.setBody(getEmailBodyFromFile("C:\\Programming\\FinalProjectDesign\\sandbox\\mailToTestProject\\src\\main\\java\\com\\amb\\B-body-template.txt"));
                 break;
             }
             case C: {
