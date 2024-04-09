@@ -7,8 +7,15 @@ import java.nio.file.Paths;
 
 public class EmailDocument {
 
-    String to;
-    String toName;
+    private String to;
+    private String toName;
+    private String cc;
+    private String subject;
+    private String body;
+
+    public String getTo() {
+        return to;
+    }
 
     public String getToName() {
         return toName;
@@ -16,14 +23,6 @@ public class EmailDocument {
 
     public void setToName(String toName) {
         this.toName = toName;
-    }
-
-    String cc;
-    String subject;
-    String body;
-
-    public String getTo() {
-        return to;
     }
 
     public void setTo(String to) {
@@ -53,7 +52,6 @@ public class EmailDocument {
     public void setBody(String body) {
         this.body = body;
     }
-
 
 
     public EmailDocument(EmailType type) throws IOException {

@@ -26,3 +26,9 @@ Then, I can read the contents of the file and use formatting to add information
 
 Info will be stored as placeholders.
 https://www.geeksforgeeks.org/how-to-extract-content-from-a-text-document-using-java/
+
+Thinking about improvements to be made.
+This is going to be an iterative process.
+
+What I am thinking now is that I should work on getting html formatted email bodies...?
+That way, I can present some nice UKRI-branded rendering in future

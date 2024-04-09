@@ -1,7 +1,0 @@
-Dear %s,
-
-Thank you for your response. This is to confirm that A is taking place.
-Have an A1 day.
-
-Kind regards,
-User Office
