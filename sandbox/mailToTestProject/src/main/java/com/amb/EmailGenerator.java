@@ -13,12 +13,14 @@ public class EmailGenerator {
 
     public static void generateMailTo() throws Exception {
 
-        EmailDocument document = service.getEmailDocument(EmailType.C);
+        EmailDocument document = service.getEmailDocument(EmailType.A);
 
-        String mailTo = String.format("mailto:%s?subject=%s&body=%s",
+        String mailTo = String.format("mailto:%s?subject=%s&body=%s&cc=%s",
                 sanitise(document.getTo()),
                 sanitise(document.getSubject()),
-                sanitise(document.getBody()));
+                sanitise(document.getBody()),
+                sanitise(document.getCc())
+        );
 
         URI uri = new URI(mailTo);
         Desktop.getDesktop().mail(uri);
