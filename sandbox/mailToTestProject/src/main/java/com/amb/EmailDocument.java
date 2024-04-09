@@ -1,8 +1,23 @@
 package com.amb;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
 public class EmailDocument {
 
     String to;
+    String toName;
+
+    public String getToName() {
+        return toName;
+    }
+
+    public void setToName(String toName) {
+        this.toName = toName;
+    }
+
     String cc;
     String subject;
     String body;
@@ -41,29 +56,42 @@ public class EmailDocument {
 
 
 
-    public EmailDocument(EmailType type) {
+    public EmailDocument(EmailType type) throws IOException {
         switch (type) {
             case A: {
                 this.setTo("person-A@email.com");
+                this.setToName("Person A");
                 this.setCc("user-office@email.com");
                 this.setSubject("Email type A");
-                this.setBody("A test email");
+                this.setBody(getEmailBodyFromFile("C:\\Programming\\FinalProjectDesign\\sandbox\\mailToTestProject\\src\\main\\java\\com\\amb\\A-body.txt"));
                 break;
             }
             case B: {
                 this.setTo("B-someone@email.com");
+                this.setToName("Be Someone");
                 this.setCc("user-office@email.com");
                 this.setSubject("Email type B");
-                this.setBody("B test email");
+                this.setBody(getEmailBodyFromFile("C:\\Programming\\FinalProjectDesign\\sandbox\\mailToTestProject\\src\\main\\java\\com\\amb\\B-body.txt"));
                 break;
             }
             case C: {
                 this.setTo("C-that-person@email.com");
+                this.setToName("C That-Person");
                 this.setCc("user-office@email.com");
                 this.setSubject("Email type C");
-                this.setBody("C test email");
+                this.setBody(getEmailBodyFromFile("C:\\Programming\\FinalProjectDesign\\sandbox\\mailToTestProject\\src\\main\\java\\com\\amb\\C-body.txt"));
                 break;
             }
         }
+    }
+
+    public String getEmailBodyFromFile(String fileName) throws IOException {
+        Path path = Paths.get(fileName);
+
+        byte[] bytes = Files.readAllBytes(path);
+        String data = new String(bytes);
+
+        return String.format(data, this.toName);
+
     }
 }

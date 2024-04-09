@@ -19,3 +19,10 @@ managed to get some help from ChatGPT: https://chat.openai.com/share/d565811d-13
 
 did not know about java.awt, which was good
 had to modify code to make it more effective
+
+## 9th April
+my current approach is to use a text file to store the email body.
+Then, I can read the contents of the file and use formatting to add information
+
+Info will be stored as placeholders.
+https://www.geeksforgeeks.org/how-to-extract-content-from-a-text-document-using-java/

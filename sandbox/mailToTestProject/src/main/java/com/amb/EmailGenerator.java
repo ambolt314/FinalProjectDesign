@@ -13,14 +13,14 @@ public class EmailGenerator {
 
     public static void generateMailTo() throws IOException, URISyntaxException {
 
-        EmailDocument document = service.getEmailDocument(EmailType.B);
+        EmailDocument document = service.getEmailDocument(EmailType.C);
 
-        String uriStr = String.format("mailto:%s?subject=%s&body=%s",
-                sanitise(document.to),
-                sanitise(document.subject),
-                sanitise(document.body));
+        String mailTo = String.format("mailto:%s?subject=%s&body=%s",
+                sanitise(document.getTo()),
+                sanitise(document.getSubject()),
+                sanitise(document.getBody()));
 
-        URI uri = new URI(uriStr);
+        URI uri = new URI(mailTo);
         Desktop.getDesktop().mail(uri);
 
     }
