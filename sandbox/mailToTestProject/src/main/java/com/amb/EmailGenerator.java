@@ -11,9 +11,9 @@ public class EmailGenerator {
     public EmailGenerator() {
     }
 
-    public static void generateMailTo() throws IOException, URISyntaxException {
+    public static void generateMailTo() throws Exception {
 
-        EmailDocument document = service.getEmailDocument(EmailType.C);
+        EmailDocument document = service.getEmailDocument(EmailType.A);
 
         String mailTo = String.format("mailto:%s?subject=%s&body=%s",
                 sanitise(document.getTo()),

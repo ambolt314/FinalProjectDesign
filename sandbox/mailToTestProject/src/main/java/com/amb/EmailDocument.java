@@ -1,5 +1,8 @@
 package com.amb;
 
+import com.amb.AServices.ADTO;
+import com.amb.AServices.AService;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -54,14 +57,21 @@ public class EmailDocument {
     }
 
 
-    public EmailDocument(EmailType type) throws IOException {
+    public EmailDocument(EmailType type) throws Exception {
         switch (type) {
             case A: {
                 this.setTo("person-A@email.com");
                 this.setToName("Person A");
                 this.setCc("user-office@email.com");
                 this.setSubject("Email type A");
-                this.setBody(getEmailBodyFromFile("C:\\Programming\\FinalProjectDesign\\sandbox\\mailToTestProject\\src\\main\\java\\com\\amb\\A-body.txt"));
+
+                //Email body logic
+                AService aService = new AService();
+                ADTO adto = aService.getAByID(1); //this would be based on the caller details
+                String bodyTemplate = getEmailBodyFromFile("C:\\Programming\\FinalProjectDesign\\sandbox\\mailToTestProject\\src\\main\\java\\com\\amb\\AServices\\A-body-template.txt");
+                String body = String.format(bodyTemplate, this.getToName(), adto.getName(), adto.getId(), adto.getFacilityReference(), adto.getBreakingBadReference());
+                this.setBody(body);
+
                 break;
             }
             case B: {
@@ -87,9 +97,8 @@ public class EmailDocument {
         Path path = Paths.get(fileName);
 
         byte[] bytes = Files.readAllBytes(path);
-        String data = new String(bytes);
 
-        return String.format(data, this.toName);
+        return new String(bytes);
 
     }
 }

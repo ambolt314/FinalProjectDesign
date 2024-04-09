@@ -3,9 +3,7 @@ Dear %s,
 Thank you for your response.
 We can confirm that the name of your A is %s and its id is %s.
 It is important to show up to A on the day, which is at %s.
-%s
 
-Further details:
 %s
 
 Kind regards,

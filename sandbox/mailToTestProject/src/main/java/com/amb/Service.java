@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class Service {
 
-    public EmailDocument getEmailDocument(EmailType type) throws IOException {
+    public EmailDocument getEmailDocument(EmailType type) throws Exception {
         return new EmailDocument(type);
     }
 }

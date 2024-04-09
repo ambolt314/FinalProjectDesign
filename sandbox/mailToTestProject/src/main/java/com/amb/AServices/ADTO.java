@@ -7,7 +7,18 @@ public class ADTO {
     private String name;
     private String facilityReference;
     private String breakingBadReference;
-    private Dictionary<String, String> aDetails;
+
+    public ADTO(
+            int id,
+            String name,
+            String facilityReference,
+            String breakingBadReference
+    ) {
+        this.setId(id);
+        this.setName(name);
+        this.setFacilityReference(facilityReference);
+        this.setBreakingBadReference(breakingBadReference);
+    }
 
     public int getId() {
         return id;
@@ -39,13 +50,5 @@ public class ADTO {
 
     public void setBreakingBadReference(String breakingBadReference) {
         this.breakingBadReference = breakingBadReference;
-    }
-
-    public Dictionary<String, String> getADetails() {
-        return aDetails;
-    }
-
-    public void setaDetails(Dictionary<String, String> aDetails) {
-        this.aDetails = aDetails;
     }
 }
