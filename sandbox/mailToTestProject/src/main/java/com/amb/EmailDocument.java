@@ -6,6 +6,8 @@ import com.amb.BServices.BeaDTO;
 import com.amb.BServices.BeaService;
 import com.amb.BServices.BeeDTO;
 import com.amb.BServices.BeeService;
+import com.amb.Visitor.VisitorDTO;
+import com.amb.Visitor.VisitorService;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -62,14 +64,19 @@ public class EmailDocument {
 
 
     public EmailDocument(EmailType type) throws Exception {
+
+        // dynamically retrieve caller information
+        VisitorService visitorService = new VisitorService();
+        VisitorDTO visitorDTO = visitorService.getCaller();
+
+        this.setTo(visitorDTO.getEmail());
+        this.setToName(visitorDTO.getForename() + " " + visitorDTO.getSurname());
+        this.setCc("user-office@email.com");
+
         switch (type) {
             case A: {
-                this.setTo("person-A@email.com");
-                this.setToName("Person A");
-                this.setCc("user-office@email.com");
                 this.setSubject("Email type A");
 
-                //Email body logic
                 AService aService = new AService();
                 ADTO adto = aService.getAByID(1); //this would be based on the caller details
                 String bodyTemplate = getEmailBodyFromFile("C:\\Programming\\FinalProjectDesign\\sandbox\\mailToTestProject\\src\\main\\java\\com\\amb\\AServices\\A-body-template.txt");
@@ -82,21 +89,16 @@ public class EmailDocument {
                         adto.getBreakingBadReference()
                 );
                 this.setBody(body);
-
                 break;
             }
             case B: {
-                this.setTo("B-someone@email.com");
-                this.setToName("Be Someone");
-                this.setCc("user-office@email.com");
                 this.setSubject("Email type B");
 
-                //Email body logic
                 BeaService beaService = new BeaService();
-                BeaDTO beaDTO = beaService.getBeaById(2);
+                BeaDTO beaDTO = beaService.getBeaById(1);
 
                 BeeService beeService = new BeeService();
-                BeeDTO beeDTO = beeService.getBeeById(1);
+                BeeDTO beeDTO = beeService.getBeeById(2);
 
                 String bodyTemplate = getEmailBodyFromFile("C:\\Programming\\FinalProjectDesign\\sandbox\\mailToTestProject\\src\\main\\java\\com\\amb\\BServices\\B-body-template.txt");
                 String body = String.format(
@@ -116,9 +118,6 @@ public class EmailDocument {
                 break;
             }
             case C: {
-                this.setTo("C-that-person@email.com");
-                this.setToName("C That-Person");
-                this.setCc("user-office@email.com");
                 this.setSubject("Email type C");
                 this.setBody(getEmailBodyFromFile("C:\\Programming\\FinalProjectDesign\\sandbox\\mailToTestProject\\src\\main\\java\\com\\amb\\CServices\\C-body-template.txt"));
                 break;
@@ -126,7 +125,7 @@ public class EmailDocument {
         }
     }
 
-    public String getEmailBodyFromFile(String fileName) throws IOException {
+    private String getEmailBodyFromFile(String fileName) throws IOException {
         Path path = Paths.get(fileName);
 
         byte[] bytes = Files.readAllBytes(path);

@@ -1,8 +1,7 @@
 package com.amb;
 
 import java.awt.*;
-import java.io.IOException;
-import java.net.*;
+import java.net.URI;
 
 public class EmailGenerator {
 
