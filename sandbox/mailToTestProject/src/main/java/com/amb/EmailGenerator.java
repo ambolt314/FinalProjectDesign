@@ -12,7 +12,7 @@ public class EmailGenerator {
 
     public static void generateMailTo() throws Exception {
 
-        EmailDocument document = service.getEmailDocument(EmailType.A);
+        EmailDocument document = service.getEmailDocument(EmailType.B);
 
         String mailTo = String.format("mailto:%s?subject=%s&body=%s&cc=%s",
                 sanitise(document.getTo()),
