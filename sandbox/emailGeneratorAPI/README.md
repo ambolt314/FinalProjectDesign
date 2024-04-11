@@ -14,3 +14,10 @@ in the link above
 Study day. Working to get this proof-of-concept complete.
 Managed to get the Maven issues that I was having fixed.
 I switched from Maven wrapper to Maven Bundle
+
+Got a server exception when retrieving the email data.
+Hopefully, this will fix it:
+https://stackoverflow.com/questions/51004447/spring-boot-java-awt-headlessexception
+That worked! :+1:
+
+Might be good to design some kind of "Thank you" page so that there's not just a blank space
