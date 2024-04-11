@@ -7,6 +7,20 @@ public class EmailDocument {
     private String subject;
     private String body;
 
+    public EmailDocument(
+            String to,
+            String toName,
+            String cc,
+            String subject,
+            String body
+    ) {
+        this.setTo(to);
+        this.setToName(toName);
+        this.setCc(cc);
+        this.setSubject(subject);
+        this.setBody(body);
+    }
+
     public String getTo() {
         return to;
     }

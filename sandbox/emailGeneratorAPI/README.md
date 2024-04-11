@@ -9,3 +9,8 @@ https://spring.io/guides/gs/rest-service
 
 I'm following the guidance set out in the instructions given
 in the link above
+
+## 11th April
+Study day. Working to get this proof-of-concept complete.
+Managed to get the Maven issues that I was having fixed.
+I switched from Maven wrapper to Maven Bundle
