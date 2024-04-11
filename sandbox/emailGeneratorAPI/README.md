@@ -21,3 +21,9 @@ https://stackoverflow.com/questions/51004447/spring-boot-java-awt-headlessexcept
 That worked! :+1:
 
 Might be good to design some kind of "Thank you" page so that there's not just a blank space
+
+I was debugging as I was getting a 404, then a 500.
+Turns out, I was using @PathParam instead of @PathVariable.
+I'd checked that the enum conversion was correct. It was.
+
+https://stackoverflow.com/questions/41657428/getting-null-with-pathparam-and-requestmapping
