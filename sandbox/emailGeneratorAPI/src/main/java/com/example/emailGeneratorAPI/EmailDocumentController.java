@@ -15,7 +15,7 @@ public class EmailDocumentController {
 
     EmailDocumentService service = new EmailDocumentService();
 
-    @GetMapping("/raw")
+    @GetMapping("/email-contents")
     public EmailDocument createRawEmail(
             @RequestParam(value = "visitorID", defaultValue = "1") int visitorID
     ) {
