@@ -4,28 +4,44 @@ import javax.ws.rs.NotFoundException;
 
 public class EmailDocumentService {
 
-    public EmailDocument getEmailDocument(int visitorID) {
 
-        String TO = "fake@email.com";
-        String TO_NAME = "Fake Fakerson";
-        String CC = "useroffice@email.com";
-        String SUBJECT;
-        String BODY;
 
-        switch (visitorID) {
-            case 1: {
-                SUBJECT = "Approval request for Type 1";
-                BODY = "Dear Fake, Your request has been approved. Kind regards, UO";
-                return new EmailDocument(TO, TO_NAME, CC, SUBJECT, BODY);
+    public EmailDocument getEmailDocument(EmailType emailType, int visitorID) {
+
+        EmailDocument document = new EmailDocument();
+
+        document.setTo("fake@email.com");
+        document.setToName("Fake Fakerson");
+        document.setCc("useroffice@email.com");
+
+        switch (emailType) {
+            case ACCOMMODATION_CONFIRMATION -> {
+                document.setSubject("Accommodation confirmation");
+                document.setBody("Dear person, your accommodation request has been successful.");
             }
-            case 2: {
-                SUBJECT = "Confirmation of Two service";
-                BODY = "Dear Mr Fakeson, Your request has been approved. Kind regards, UO";
-                return new EmailDocument(TO, TO_NAME, CC, SUBJECT, BODY);
+            case BOOKING_REMINDER -> {
+                document.setSubject("Booking reminder");
+                document.setBody("Dear person, this is a reminder to make a booking.");
             }
-            default: throw new NotFoundException("Visitor ID " + visitorID);
+            case CAB_CONFIRMATION -> {
+                document.setSubject("Cab confirmation");
+                document.setBody("Dear person, your cab has been booked successfully.");
+            }
         }
 
+        switch (visitorID) {
+            case 1 -> {
+                document.setTo("fake-1@email.com");
+                document.setToName("Fake Fakerson");
+                return document;
+            }
+            case 2 -> {
+                document.setTo("fake-2@email.com");
+                document.setToName("John Johnson");
+                return document;
+            }
+            default -> throw new NotFoundException("Visitor ID " + visitorID);
+        }
 
     }
 }
