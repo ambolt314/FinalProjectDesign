@@ -53,6 +53,16 @@
 			<artifactId>javax.ws.rs-api</artifactId>
 			<version>2.1</version>
 		</dependency>
+		<dependency>
+			<groupId>org.freemarker</groupId>
+			<artifactId>freemarker</artifactId>
+			<version>2.3.32</version>
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.groovy</groupId>
+			<artifactId>groovy-all</artifactId>
+			<version>1.7.6</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -61,7 +71,16 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+					<!-- Allow JUnit to access the test classes -->
+					<argLine>--add-opens <my-module>/<my-package>=ALL-UNNAMED</argLine>
+				</configuration>
+			</plugin>
 		</plugins>
+
 	</build>
 
 </project>

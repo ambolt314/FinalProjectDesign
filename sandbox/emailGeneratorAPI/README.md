@@ -27,3 +27,24 @@ Turns out, I was using @PathParam instead of @PathVariable.
 I'd checked that the enum conversion was correct. It was.
 
 https://stackoverflow.com/questions/41657428/getting-null-with-pathparam-and-requestmapping
+
+## 12th April
+My plan today is to get something in Freemarker working.
+First, I am going to do some templating. Create the .ftp files and then go from there
+
+## 13th April
+Currently, I am working on what I had set out to complete yesterday
+My plan is to create a demo of my work in the design review.
+Then, once this is approved, I will modify my designs further to reflect what I have implemented
+
+It is hoped that after a successful design review on the 15th, I can develop the actual code on `#1548`
+
+My current approach is to recreate the environment from scratch in my own sandbox
+Then, I can work out how it works and what I can do.
+
+A lot of the code which I am copying over seems to be deprecated. I need to figure out what the latest version of the code is.
+To do this, I need to work out what the existing code is doing and then find code that fulfils the same functionality.
+
+Looking at the existing code, it appears to make use of `BasicPersonDetailsDTO`. If I can use this in my project, then that would really help.
+
+I also need to consider this method in the visit session bean: `sendRequestSummaryEmails`

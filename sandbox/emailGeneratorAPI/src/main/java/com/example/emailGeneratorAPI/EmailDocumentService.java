@@ -1,23 +1,45 @@
 package com.example.emailGeneratorAPI;
 
+import com.example.emailGeneratorAPI.templates.MailTemplate;
+import com.example.emailGeneratorAPI.templates.TemplateNameConstants;
+import com.example.emailGeneratorAPI.templates.TemplateUtils;
+import freemarker.template.Template;
+import freemarker.template.TemplateException;
+
 import javax.ws.rs.NotFoundException;
+import java.io.IOException;
+import java.util.HashMap;
 
 public class EmailDocumentService {
 
+    MailTemplate mailTemplate = new MailTemplate();
 
-
-    public EmailDocument getEmailDocument(EmailType emailType, int visitorID) {
+    public EmailDocument getEmailDocument(EmailType emailType, int visitorID) throws IOException, TemplateException {
 
         EmailDocument document = new EmailDocument();
+        BasicPersonDetailsDTO details = new BasicPersonDetailsDTO();
 
-        document.setTo("fake@email.com");
-        document.setToName("Fake Fakerson");
-        document.setCc("useroffice@email.com");
+        document.setTo(details.getEmail());
+        document.setToName(details.getDisplayName());
+        document.setCc("user-office@email.com");
 
         switch (emailType) {
             case ACCOMMODATION_CONFIRMATION -> {
                 document.setSubject("Accommodation confirmation");
-                document.setBody("Dear person, your accommodation request has been successful.");
+
+                //Set up email body
+                String body;
+
+                Template template = mailTemplate.getTemplate(TemplateNameConstants.ACCOMMODATION_CONFIRMATION_TEMPLATE_NAME);
+                HashMap<String, Object> dataModel = new HashMap<>();
+
+                dataModel.put("name", "World");
+
+                body = TemplateUtils.buildStringFromTemplate(template, dataModel);
+
+
+
+                document.setBody(body);
             }
             case BOOKING_REMINDER -> {
                 document.setSubject("Booking reminder");
