@@ -6,26 +6,23 @@ public class EmailDocument {
     private String cc;
     private String subject;
     private String body;
+    private EmailType type;
 
-    public EmailDocument() {
+    public EmailType getType() {
+        return type;
+    }
+
+    public void setType(EmailType type) {
+        this.type = type;
+    }
+
+    public EmailDocument(EmailType type) {
         this.setTo("");
         this.setToName("");
         this.setCc("");
         this.setSubject("");
         this.setBody("");
-    }
-    public EmailDocument(
-            String to,
-            String toName,
-            String cc,
-            String subject,
-            String body
-    ) {
-        this.setTo(to);
-        this.setToName(toName);
-        this.setCc(cc);
-        this.setSubject(subject);
-        this.setBody(body);
+        this.setType(type);
     }
 
     public String getTo() {

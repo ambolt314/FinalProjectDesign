@@ -16,6 +16,8 @@
 	<description>Sandbox project for generating emails from a REST API</description>
 	<properties>
 		<java.version>17</java.version>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -63,6 +65,11 @@
 			<artifactId>groovy-all</artifactId>
 			<version>1.7.6</version>
 		</dependency>
+		<dependency>
+			<groupId>javax.annotation</groupId>
+			<artifactId>javax.annotation-api</artifactId>
+			<version>1.2</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -74,10 +81,10 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<configuration>
-					<!-- Allow JUnit to access the test classes -->
-					<argLine>--add-opens <my-module>/<my-package>=ALL-UNNAMED</argLine>
-				</configuration>
+<!--				<configuration>-->
+<!--					&lt;!&ndash; Allow JUnit to access the test classes &ndash;&gt;-->
+<!--					<argLine>&#45;&#45;add-opens <my-module>/<my-package>=ALL-UNNAMED</argLine>-->
+<!--				</configuration>-->
 			</plugin>
 		</plugins>
 

@@ -48,3 +48,24 @@ To do this, I need to work out what the existing code is doing and then find cod
 Looking at the existing code, it appears to make use of `BasicPersonDetailsDTO`. If I can use this in my project, then that would really help.
 
 I also need to consider this method in the visit session bean: `sendRequestSummaryEmails`
+
+## 15th April
+Very frustrated. Getting a stumbling block.
+Trying to work through it
+
+Using this as reference: https://tecadmin.net/resolvee-maven-error-invalid-target-release-17/
+
+Nothing seems to fix the issue: `java: error: invalid source release: 17`
+
+I've tried invalidating caches. I've tried changing the system environment variables.
+I've even tried changing the Maven wrapper config thing, but it doesn't work
+
+Going to work on refining the design. Added a BasicPersonDetails service to retrieve fake information.
+
+Refactoring so that the service retrieves the email. Adding the freemarker logic to the email generator: this makes sense to do this, as it will be possible to retrieve raw data.
+
+Thinking that it might be possible to use Freemarker for PDFs too.
+This is something that I'd like to explore.
+
+However, this would mean that I could think about reverting to the old format of having a `Document` class
+

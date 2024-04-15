@@ -4,8 +4,8 @@ import freemarker.template.Configuration;
 import freemarker.template.DefaultObjectWrapper;
 import freemarker.template.Template;
 import freemarker.template.TemplateExceptionHandler;
+import jakarta.annotation.PostConstruct;
 
-import javax.annotation.PostConstruct;
 import java.io.IOException;
 
 public class MailTemplate {

@@ -1,4 +1,4 @@
-package com.example.emailGeneratorAPI;
+package com.example.emailGeneratorAPI.BasicPersonDetails;
 
 public class BasicPersonDetailsDTO {
     private String country;
