@@ -69,3 +69,19 @@ This is something that I'd like to explore.
 
 However, this would mean that I could think about reverting to the old format of having a `Document` class
 
+I think that I managed to get the release issue fixed. However, I am trying to figure out how to fix an issue with DGM methods
+A garbage collection method is being called, even though it has been deprecated. I cannot remove it from the file because it is from `Object.java` and is readonly.
+
+## 16th April
+Still working through the issue. We've tried changing the version a few times but this ends up breaking other code (such as instances where I have enhanced switch statements).
+
+Now trying to translate my work onto a feature branch in the codebase.
+Going well so far, though my earlier work means a lot has to be changed.
+
+It looks likely that I'm going to have to address the circular dependency in my design:
+![img.png](img.png)
+
+I think that the resource itself uses the EJB, which is why there weren't any problems.
+I need to figure out a way of loading in the information from `EmailService` into the project
+
+Ultimately, I want to be able to call the generate body methods from `EmailService` in my code, which is in `visits-model`
