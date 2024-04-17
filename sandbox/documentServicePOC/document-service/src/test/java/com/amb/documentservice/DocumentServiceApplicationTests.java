@@ -1,4 +1,4 @@
-package com.amb.documentServiceBackend;
+package com.amb.documentservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
