@@ -34,20 +34,23 @@ public class EmailGenerator {
         HashMap<String, Object> dataModel = new HashMap<>();
 
         switch (type) {
-            case ACCOMMODATION_CONFIRMATION -> {
+            case ACCOMMODATION_CONFIRMATION: {
                 template = mailTemplate.getTemplate(TemplateNameConstants.ACCOMMODATION_CONFIRMATION_TEMPLATE_NAME);
                 dataModel.put("name", details.getDisplayName());
                 // list other data model additions here
+                break;
             }
-            case BOOKING_REMINDER -> {
+            case BOOKING_REMINDER:{
                 document.setSubject("Booking reminder");
                 template = mailTemplate.getTemplate(TemplateNameConstants.BOOKING_REMINDER_TEMPLATE_NAME);
+                break;
             }
-            case CAB_CONFIRMATION -> {
+            case CAB_CONFIRMATION: {
                 document.setSubject("Cab confirmation");
                 template = mailTemplate.getTemplate(TemplateNameConstants.CAB_CONFIRMATION_TEMPLATE_NAME);
+                break;
             }
-            default -> throw new IllegalStateException("Unexpected value: " + document.getType()); //TODO: work out kind of exception I want here
+            default: throw new IllegalStateException("Unexpected value: " + document.getType()); //TODO: work out kind of exception I want here
         }
 
         String body = TemplateUtils.buildStringFromTemplate(template, dataModel);
@@ -63,7 +66,7 @@ public class EmailGenerator {
      * @throws URISyntaxException
      * @throws IOException
      */
-    static void render(EmailDocument document) throws URISyntaxException, IOException {
+    void render(EmailDocument document) throws URISyntaxException, IOException {
         String mailTo = String.format("mailto:%s?subject=%s&body=%s&cc=%s",
                 sanitise(document.getTo()),
                 sanitise(document.getSubject()),
@@ -72,7 +75,9 @@ public class EmailGenerator {
         );
 
         URI uri = new URI(mailTo);
+
         Desktop.getDesktop().mail(uri);
+
     }
 
     /**
@@ -80,7 +85,7 @@ public class EmailGenerator {
      * @param s - the string to be sanitised
      * @return - a sanitised version of the string
      */
-    private static String sanitise(String s) {
+    private String sanitise(String s) {
         return s.replace(" ", "%20")
                 .replace("\n", "%0A")
                 .replace("\r", "%0D");

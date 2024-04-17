@@ -10,11 +10,14 @@ public class EmailGeneratorApiApplication {
 
 	public static void main(String[] args) {
 
+//		SpringApplication.run(EmailGeneratorApiApplication.class);
+
 		SpringApplicationBuilder builder = new SpringApplicationBuilder(EmailGeneratorApiApplication.class);
 
 		builder.headless(false);
 
 		ConfigurableApplicationContext context = builder.run(args);
+		context.close();
 
 	}
 

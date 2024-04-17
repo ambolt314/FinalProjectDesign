@@ -8,14 +8,6 @@ public class EmailDocument {
     private String body;
     private EmailType type;
 
-    public EmailType getType() {
-        return type;
-    }
-
-    public void setType(EmailType type) {
-        this.type = type;
-    }
-
     public EmailDocument(EmailType type) {
         this.setTo("");
         this.setToName("");
@@ -63,5 +55,13 @@ public class EmailDocument {
 
     public void setBody(String body) {
         this.body = body;
+    }
+
+    public EmailType getType() {
+        return type;
+    }
+
+    public void setType(EmailType type) {
+        this.type = type;
     }
 }

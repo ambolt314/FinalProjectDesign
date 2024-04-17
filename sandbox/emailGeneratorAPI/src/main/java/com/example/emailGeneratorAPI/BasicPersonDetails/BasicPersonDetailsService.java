@@ -6,17 +6,17 @@ public class BasicPersonDetailsService {
         BasicPersonDetailsDTO details = new BasicPersonDetailsDTO();
 
         switch (id) {
-            case 1 -> {
+            case 1: {
                 details.setDisplayName("Fake Fakerson");
                 details.setEmail("fake@email.com");
                 break;
             }
-            case 2 -> {
+            case 2: {
                 details.setDisplayName("John Johnson");
                 details.setEmail("jonjon@email.com");
                 break;
             }
-            default -> {
+            default: {
                 details.setDisplayName("Fake Fakerson");
                 details.setEmail("fake@email.com");
             }
