@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-05-10T19:09:44.954Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0" etag="oo6qCXPtuPHNW9qSKuKe" version="24.3.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-11T15:25:06.694Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0" etag="Oqg76PyblpF15Wkv6Yax" version="24.3.1" type="github">
   <diagram name="Page-1" id="lkIzZtKHE2g4b-k83Zns">
-    <mxGraphModel dx="3827" dy="1811" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2927" dy="1268" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -99,12 +99,12 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="SzScdwgrWjmyck-_DvYI-41" value="Persistence Layer" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;dashed=1;" parent="1" vertex="1">
-          <mxGeometry x="-436" y="800" width="1480" height="145" as="geometry" />
+          <mxGeometry x="-436" y="800" width="1136" height="145" as="geometry" />
         </mxCell>
         <mxCell id="SzScdwgrWjmyck-_DvYI-40" value="&lt;u&gt;Persistence layer&lt;br&gt;&lt;/u&gt;&lt;div align=&quot;left&quot;&gt;This layer implements persistent storage of the information in the Report layer. &lt;b&gt;&lt;u&gt;This will be a future development in later versions&lt;/u&gt;&lt;/b&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-406" y="880" width="280" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="eNaVJn3fZmgTGhSF1ned-5" value="" style="group" vertex="1" connectable="0" parent="1">
+        <mxCell id="eNaVJn3fZmgTGhSF1ned-5" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="-356" y="470" width="650" height="380" as="geometry" />
         </mxCell>
         <mxCell id="Et5u1Aqdu9SfvR-X_sqC-8" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="eNaVJn3fZmgTGhSF1ned-5" vertex="1">
@@ -152,13 +152,13 @@
         <mxCell id="Et5u1Aqdu9SfvR-X_sqC-7" value="/other-visit-confirmation" style="rounded=0;whiteSpace=wrap;html=1;" parent="eNaVJn3fZmgTGhSF1ned-5" vertex="1">
           <mxGeometry x="340" y="220" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="eNaVJn3fZmgTGhSF1ned-4" value="&lt;b style=&quot;font-size: 23px;&quot;&gt;&lt;u&gt;Email endpoints&lt;/u&gt;&lt;br&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eNaVJn3fZmgTGhSF1ned-5">
+        <mxCell id="eNaVJn3fZmgTGhSF1ned-4" value="&lt;b style=&quot;font-size: 23px;&quot;&gt;&lt;u&gt;Email endpoints&lt;/u&gt;&lt;br&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="eNaVJn3fZmgTGhSF1ned-5" vertex="1">
           <mxGeometry x="205" y="10" width="240" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="eNaVJn3fZmgTGhSF1ned-6" value="" style="group" vertex="1" connectable="0" parent="1">
+        <mxCell id="eNaVJn3fZmgTGhSF1ned-6" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="354" y="630" width="310" height="220" as="geometry" />
         </mxCell>
-        <mxCell id="eNaVJn3fZmgTGhSF1ned-1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="eNaVJn3fZmgTGhSF1ned-6">
+        <mxCell id="eNaVJn3fZmgTGhSF1ned-1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="eNaVJn3fZmgTGhSF1ned-6" vertex="1">
           <mxGeometry width="310" height="220" as="geometry" />
         </mxCell>
         <mxCell id="h1pRsVhyzems_VzTcCOB-3" value="/invitation-letter" style="rounded=0;whiteSpace=wrap;html=1;" parent="eNaVJn3fZmgTGhSF1ned-6" vertex="1">
