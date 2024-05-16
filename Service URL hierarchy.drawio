@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-05-16T21:09:30.892Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:126.0) Gecko/20100101 Firefox/126.0" etag="7M7DFke_SksfviBGyoUh" version="24.4.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-16T21:12:04.807Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:126.0) Gecko/20100101 Firefox/126.0" etag="ynJ1WoWxfRzMZW1ID0lX" version="24.4.0" type="github">
   <diagram name="Page-1" id="lkIzZtKHE2g4b-k83Zns">
-    <mxGraphModel dx="2736" dy="1155" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2442" dy="977" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -110,38 +110,20 @@
         <mxCell id="Et5u1Aqdu9SfvR-X_sqC-8" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="eNaVJn3fZmgTGhSF1ned-5" vertex="1">
           <mxGeometry width="650" height="380" as="geometry" />
         </mxCell>
-        <mxCell id="cFXvyy3T8Uc6k7l6PIuW-4" value="/taxi-confirmation" style="rounded=0;whiteSpace=wrap;html=1;" parent="eNaVJn3fZmgTGhSF1ned-5" vertex="1">
-          <mxGeometry x="340" y="300" width="120" height="60" as="geometry" />
-        </mxCell>
         <mxCell id="cFXvyy3T8Uc6k7l6PIuW-22" value="/request-confirmation" style="rounded=0;whiteSpace=wrap;html=1;" parent="eNaVJn3fZmgTGhSF1ned-5" vertex="1">
           <mxGeometry x="500" y="220" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="cFXvyy3T8Uc6k7l6PIuW-23" value="/booking-reminder" style="rounded=0;whiteSpace=wrap;html=1;" parent="eNaVJn3fZmgTGhSF1ned-5" vertex="1">
-          <mxGeometry x="180" y="60" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="cFXvyy3T8Uc6k7l6PIuW-27" value="/accommodation-confirmation" style="rounded=0;whiteSpace=wrap;html=1;" parent="eNaVJn3fZmgTGhSF1ned-5" vertex="1">
+        <mxCell id="Et5u1Aqdu9SfvR-X_sqC-1" value="/clf-visit-confirmation" style="rounded=0;whiteSpace=wrap;html=1;" parent="eNaVJn3fZmgTGhSF1ned-5" vertex="1">
           <mxGeometry x="20" y="60" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="h1pRsVhyzems_VzTcCOB-7" value="/safety-test-reminder" style="rounded=0;whiteSpace=wrap;html=1;" parent="eNaVJn3fZmgTGhSF1ned-5" vertex="1">
-          <mxGeometry x="180" y="300" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="h1pRsVhyzems_VzTcCOB-8" value="/expenses-reminder" style="rounded=0;whiteSpace=wrap;html=1;" parent="eNaVJn3fZmgTGhSF1ned-5" vertex="1">
-          <mxGeometry x="20" y="140" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="h1pRsVhyzems_VzTcCOB-1" value="/emergency-contact-reminder" style="rounded=0;whiteSpace=wrap;html=1;" parent="eNaVJn3fZmgTGhSF1ned-5" vertex="1">
-          <mxGeometry x="500" y="60" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="Et5u1Aqdu9SfvR-X_sqC-1" value="/clf-visit-confirmation" style="rounded=0;whiteSpace=wrap;html=1;" parent="eNaVJn3fZmgTGhSF1ned-5" vertex="1">
-          <mxGeometry x="340" y="60" width="120" height="60" as="geometry" />
-        </mxCell>
         <mxCell id="Et5u1Aqdu9SfvR-X_sqC-2" value="/insurance-notification" style="rounded=0;whiteSpace=wrap;html=1;" parent="eNaVJn3fZmgTGhSF1ned-5" vertex="1">
-          <mxGeometry x="180" y="140" width="120" height="60" as="geometry" />
+          <mxGeometry x="180" y="60" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Et5u1Aqdu9SfvR-X_sqC-3" value="/invitation-email" style="rounded=0;whiteSpace=wrap;html=1;" parent="eNaVJn3fZmgTGhSF1ned-5" vertex="1">
-          <mxGeometry x="340" y="140" width="120" height="60" as="geometry" />
+          <mxGeometry x="340" y="60" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Et5u1Aqdu9SfvR-X_sqC-4" value="/isis-visit-confirmation" style="rounded=0;whiteSpace=wrap;html=1;" parent="eNaVJn3fZmgTGhSF1ned-5" vertex="1">
-          <mxGeometry x="500" y="140" width="120" height="60" as="geometry" />
+          <mxGeometry x="500" y="60" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Et5u1Aqdu9SfvR-X_sqC-5" value="/lta-isis-visit-confirmation" style="rounded=0;whiteSpace=wrap;html=1;" parent="eNaVJn3fZmgTGhSF1ned-5" vertex="1">
           <mxGeometry x="180" y="220" width="120" height="60" as="geometry" />
