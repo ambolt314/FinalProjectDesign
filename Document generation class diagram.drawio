@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-06-06T16:25:12.451Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 OPR/110.0.0.0" etag="ax_tfqFGkUIvJzFCQb-n" version="24.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-06T16:37:50.723Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 OPR/110.0.0.0" etag="4DoXFMfr2ovFBp4WpvXo" version="24.4.3" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="2363" dy="2156" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2235" dy="2074" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -160,16 +160,16 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="klUVoI3xU74Hqo5dRXkd-0" value="EmailService" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="-52" y="70" width="466" height="456" as="geometry" />
+          <mxGeometry x="-52" y="70" width="466" height="470" as="geometry" />
         </mxCell>
-        <mxCell id="klUVoI3xU74Hqo5dRXkd-1" value="&lt;div&gt;- logger: Logger&lt;/div&gt;&lt;div&gt;- entityManager: EntityManager&lt;/div&gt;&lt;div&gt;- mailTemplate: MailTemplate&lt;br&gt;&lt;/div&gt;&lt;div&gt;- visitService: VisitService&lt;/div&gt;&lt;div&gt;- visitorService: VisitorService&lt;br&gt;&lt;/div&gt;&lt;div&gt;- userOfficeAccess: UserOfficeAccess&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="klUVoI3xU74Hqo5dRXkd-0" vertex="1">
-          <mxGeometry y="26" width="466" height="320" as="geometry" />
+        <mxCell id="klUVoI3xU74Hqo5dRXkd-1" value="&lt;div&gt;- logger: Logger&lt;/div&gt;&lt;div&gt;- entityManager: EntityManager&lt;/div&gt;&lt;div&gt;- mailTemplate: MailTemplate&lt;br&gt;&lt;/div&gt;&lt;div&gt;- reqPurposeService: ReqPurposeService&lt;/div&gt;&lt;div&gt;- visitService: VisitService&lt;/div&gt;&lt;div&gt;- visitorService: VisitorService&lt;br&gt;&lt;/div&gt;&lt;div&gt;- userOfficeAccess: UserOfficeAccess&lt;br&gt;&lt;/div&gt;&lt;div&gt;- safetyTestManager: SafetyTestManager&lt;/div&gt;&lt;div&gt;- scheduledExperimentManager: ScheduledExperimentManager&lt;/div&gt;&lt;div&gt;- visitorTransformer: VisitorTransformer&lt;/div&gt;&lt;div&gt;- type: EmailType&lt;/div&gt;&lt;div&gt;- from: String&lt;/div&gt;&lt;div&gt;- fromName: String&lt;/div&gt;&lt;div&gt;- to: String&lt;/div&gt;&lt;div&gt;- toName: String&lt;/div&gt;&lt;div&gt;- cc: String&lt;/div&gt;&lt;div&gt;- subject: String&lt;/div&gt;&lt;div&gt;- body: String&lt;/div&gt;&lt;div&gt;- template: Template&lt;/div&gt;&lt;div&gt;- dataModel: Map&amp;lt;String, Object&amp;gt;&lt;/div&gt;&lt;div&gt;- visitorDTO: VisitorDTO&lt;/div&gt;&lt;div&gt;- basicPersonDetailsDTO: BasicPersonDetailsDTO&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="klUVoI3xU74Hqo5dRXkd-0" vertex="1">
+          <mxGeometry y="26" width="466" height="334" as="geometry" />
         </mxCell>
         <mxCell id="klUVoI3xU74Hqo5dRXkd-2" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="klUVoI3xU74Hqo5dRXkd-0" vertex="1">
-          <mxGeometry y="346" width="466" height="8" as="geometry" />
+          <mxGeometry y="360" width="466" height="8" as="geometry" />
         </mxCell>
         <mxCell id="klUVoI3xU74Hqo5dRXkd-3" value="&lt;div&gt;+ createInvitationEmail(Long visitorID, CallerDetails callerDetails): EmailDTO&lt;/div&gt;&lt;div&gt;+ createVisitConfirmationEmail(FacilityType facilityType, Long visitorID, Long purposeID, String sessionID, CallerDetails callerDetails): EmailDTO&lt;/div&gt;&lt;div&gt;+ createInsuranceNotificationEmail(Long visitID, CallerDetails callerDetails): EmailDTO&lt;/div&gt;&lt;div&gt;+ createRequestConfirmation(): EmailDTO&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="klUVoI3xU74Hqo5dRXkd-0" vertex="1">
-          <mxGeometry y="354" width="466" height="102" as="geometry" />
+          <mxGeometry y="368" width="466" height="102" as="geometry" />
         </mxCell>
         <mxCell id="388r8Wky6wOfIN9yFUwu-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="388r8Wky6wOfIN9yFUwu-0" target="A69BAZDd_FpkVHJT01qS-23" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -193,7 +193,7 @@
           <mxGeometry y="144" width="230" height="26" as="geometry" />
         </mxCell>
         <mxCell id="zF09DsBkX-imnk4xTCFa-0" value="&lt;div&gt;&lt;i&gt;&amp;lt;&amp;lt;enumeration&amp;gt;&amp;gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;FacilityType&lt;/b&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="460" y="390" width="130" height="170" as="geometry" />
+          <mxGeometry x="460" y="404" width="130" height="170" as="geometry" />
         </mxCell>
         <mxCell id="zF09DsBkX-imnk4xTCFa-1" value="CLF" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="zF09DsBkX-imnk4xTCFa-0">
           <mxGeometry y="40" width="130" height="26" as="geometry" />
