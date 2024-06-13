@@ -1,0 +1,61 @@
+﻿<Window x:Class="EmailRenderer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EmailRenderer"
+        mc:Ignorable="d"
+        Title="Document generation service - CLIENT" Height="640" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.3*"/>
+            <ColumnDefinition Width="0.7*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Background="#1e2d7c" Grid.Column="0">
+            <TabControl Background="#1e2d7c">
+                <TabItem Header="Invitation email">
+                    <StackPanel>
+                        <TextBox Name="Txt_InvitationVisitorID" TextWrapping="Wrap" Text="Visitor ID" Width="120" Margin="5 5"/>
+                        <Button Name="Btn_GenerateInvitationEmail" Content="Generate" Click="Btn_GenerateInvitationEmail_Click" VerticalAlignment="Bottom" Width="120"/>
+                    </StackPanel>
+                </TabItem>
+                <TabItem Header="CLF visit confirmation">
+                    <StackPanel>
+                        <TextBox Name="Txt_CLFVisitorID" TextWrapping="Wrap" Text="Visitor ID" Width="120" Margin="5 5"/>
+                        <TextBox Name="Txt_CLFPurposeID" TextWrapping="Wrap" Text="Purpose ID" Width="120" Margin="5 5"/>
+                        <TextBox Name="Txt_CLFSessionID" TextWrapping="Wrap" Text="Session ID" Width="120" Margin="5 5"/>
+                        <Button Name="Btn_GenerateCLFVisitConfirmation" Content="Generate email" Click="Btn_GenerateCLFVisitConfirmationEmail_Click" VerticalAlignment="Bottom" Width="120"/>
+                    </StackPanel>
+                </TabItem>
+                <TabItem Header="Insurance notification">
+                    <StackPanel>
+                        <TextBox Name="Txt_InsuranceVisitID" TextWrapping="Wrap" Text="Visit ID" Width="120" Margin="5 5"/>
+                        <Button Name="Btn_GenerateInsuranceNotification" Content="Generate email" VerticalAlignment="Bottom" Width="120" Click="Btn_GenerateInsuranceNotification_Click"/>
+                    </StackPanel>
+                </TabItem>
+            </TabControl>
+
+        </StackPanel>
+
+        <StackPanel Background="#ddddee" Grid.Column="1">
+            <Grid Margin="20" Height="10">
+                <ProgressBar Minimum="0" Maximum="100" Name="pbStatus" />
+            </Grid>
+            <Label Content="From:" HorizontalAlignment="Left"/>
+            <TextBox Name="Txt_From" TextWrapping="Wrap" Text="" Width="350" Margin="5 2" HorizontalAlignment="Left" IsReadOnly="True"/>
+            <Label Content="To:" HorizontalAlignment="Left"/>
+            <TextBox Name="Txt_To" TextWrapping="Wrap" Text="" Width="350" Margin="5 2" HorizontalAlignment="Left" IsReadOnly="True"/>
+            <Label Content="Cc:" HorizontalAlignment="Left"/>
+            <TextBox Name="Txt_Cc" TextWrapping="Wrap" Text="" Width="350" Margin="5 2" HorizontalAlignment="Left" IsReadOnly="True"/>
+            <Label Content="Subject:" HorizontalAlignment="Left"/>
+            <TextBox Name="Txt_Subject" TextWrapping="Wrap" Text="" Width="350" Margin="5 2" HorizontalAlignment="Left" IsReadOnly="True"/>
+            <Label Content="Body:" HorizontalAlignment="Left"/>
+            <TextBox Name="Txt_Body" TextWrapping="Wrap" Text="" Width="550" Height="150"  Margin="5 2" HorizontalAlignment="Left" IsReadOnly="True"/>
+            <Button Content="Send email" Width="120" HorizontalAlignment="Left" Margin="5 2" Name="Btn_SendEmail" Click="Btn_SendEmail_Click"/>
+            <Label Name="Lbl_Warning" Content="Please generate an email!" Foreground="red" Visibility="Hidden"/>
+        </StackPanel>
+
+
+
+    </Grid>
+</Window>
