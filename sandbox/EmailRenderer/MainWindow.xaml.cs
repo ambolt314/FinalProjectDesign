@@ -14,21 +14,50 @@ namespace EmailRenderer
             InitializeComponent();
         }
 
+        private void Btn_GenerateCLFVisitConfirmationEmail_Click(object sender, RoutedEventArgs e)
+        {
+            renderEmail($"/visits-service/email/clf-visit-confirmation?visitorID={Txt_CLFVisitorID.Text}&purposeID={Txt_CLFPurposeID.Text}&sessionID={Txt_CLFSessionID.Text}");
+        }
+
+
+        private void Btn_GenerateInsuranceNotification_Click(object sender, RoutedEventArgs e)
+        {
+            renderEmail($"/visits-service/email/insurance-notification?visitID={Txt_InsuranceVisitID.Text}");
+        }
+
         private void Btn_GenerateInvitationEmail_Click(object sender, RoutedEventArgs e)
         {
             renderEmail($"/visits-service/email/invitation-email?visitorID={Txt_InvitationVisitorID.Text}");
         }
 
-        private void Btn_GenerateCLFVisitConfirmationEmail_Click(object sender, RoutedEventArgs e)
+        private void Btn_GenerateISISVisitConfirmationEmail_Click(object sender, RoutedEventArgs e)
         {
-            renderEmail($"/visits-service/email/cl-visit-confirmation?visitorID={Txt_CLFVisitorID.Text}&purposeID={Txt_CLFPurposeID.Text}&sessionID={Txt_CLFSessionID.Text}");
+            renderEmail($"/visits-service/email/isis-visit-confirmation?visitorID={Txt_ISISVisitorID.Text}&purposeID={Txt_ISISPurposeID.Text}&sessionID={Txt_ISISSessionID.Text}");
         }
 
-        private void Btn_GenerateInsuranceNotification_Click(object sender, RoutedEventArgs e)
+        private void Btn_GenerateLTACLFVisitConfirmationEmail_Click(object sender, RoutedEventArgs e)
         {
-            renderEmail($"/visits-service/email/insurance-notificationl?visitID={Txt_InsuranceVisitID.Text}");
+            renderEmail($"/visits-service/email/lta-clf-visit-confirmation?visitorID={Txt_LTACLFVisitorID.Text}&purposeID={Txt_LTACLFPurposeID.Text}&sessionID={Txt_LTACLFSessionID.Text}");
         }
 
+        private void Btn_GenerateLTAISISVisitConfirmationEmail_Click(object sender, RoutedEventArgs e)
+        {
+            renderEmail($"/visits-service/email/lta-isis-visit-confirmation?visitorID={Txt_LTACLFVisitorID.Text}&purposeID={Txt_LTACLFPurposeID.Text}&sessionID={Txt_LTACLFSessionID.Text}");
+        }
+
+        private void Btn_GenerateOtherVisitConfirmationEmail_Click(object sender, RoutedEventArgs e)
+        {
+            renderEmail($"/visits-service/email/other-visit-confirmation?visitorID={Txt_LTACLFVisitorID.Text}&purposeID={Txt_LTACLFPurposeID.Text}");
+        }
+
+        private void Btn_GenerateRequestConfirmationEmail_Click(object sender, RoutedEventArgs e)
+        {
+            renderEmail($"");
+        }
+
+        
+
+        
         
 
         private void Btn_SendEmail_Click(object sender, RoutedEventArgs e)
