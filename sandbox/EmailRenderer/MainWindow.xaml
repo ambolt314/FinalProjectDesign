@@ -85,8 +85,5 @@
             <Button Content="Send email" Width="120" HorizontalAlignment="Left" Margin="5 2" Name="Btn_SendEmail" Click="Btn_SendEmail_Click"/>
             <Label Name="Lbl_Warning" Content="Please generate an email!" Foreground="red" Visibility="Hidden"/>
         </StackPanel>
-
-
-
     </Grid>
 </Window>
