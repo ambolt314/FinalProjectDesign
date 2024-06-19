@@ -12,7 +12,7 @@
             <ColumnDefinition Width="0.7*"/>
         </Grid.ColumnDefinitions>
         <StackPanel Background="#1e2d7c" Grid.Column="0">
-            <TabControl Background="#1e2d7c">
+            <TabControl Background="#1e2d7c" Height="623">
                 <TabItem Header="Visit confirmation">
                     <StackPanel>
                         <CheckBox Name="Cb_LTA" Content="LTA visit" IsThreeState="False" IsChecked="False" Foreground="white" Margin="0 15"/>
@@ -40,7 +40,20 @@
                         <Button Name="Btn_GenerateInvitationEmail" Content="Generate email contents" Click="Btn_GenerateInvitationEmail_Click" VerticalAlignment="Bottom" Width="180"/>
                     </StackPanel>
                 </TabItem>
-                
+                <TabItem Header="Request confirmation">
+                </TabItem>
+                <TabItem Header="WELCOME" IsSelected="True">
+                    <StackPanel>
+                        <TextBlock Foreground="white" FontSize="32" TextWrapping="WrapWithOverflow" Margin="5 5">
+    Document generation service client
+                        </TextBlock>
+                        <TextBlock Foreground="white" FontSize="16" FontStyle="Italic" TextWrapping="WrapWithOverflow" Margin="5 5">
+    Andrew Michael Bolt (1934573)
+                        </TextBlock>
+                        
+                    </StackPanel>
+                    
+                </TabItem>
             </TabControl>
 
         </StackPanel>

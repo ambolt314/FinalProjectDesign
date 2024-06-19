@@ -102,7 +102,7 @@ namespace EmailRenderer
             {
                 response = await client.GetAsync(uri);
             }
-            catch (System.Net.Http.HttpRequestException ex)
+            catch (HttpRequestException ex)
             {
                 Lbl_Warning.Content = "Connection refused: please instantiate Docker container";
                 Lbl_Warning.Visibility = Visibility.Visible;
