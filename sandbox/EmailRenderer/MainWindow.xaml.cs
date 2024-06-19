@@ -14,10 +14,25 @@ namespace EmailRenderer
             InitializeComponent();
         }
 
-        private void Btn_GenerateCLFVisitConfirmationEmail_Click(object sender, RoutedEventArgs e)
+        Boolean isLTA = false;
+
+        private void Btn_GenerateVisitConfirmationEmail_Click(object sender, RoutedEventArgs e)
         {
-            renderEmail($"/visits-service/email/clf-visit-confirmation?visitorID={Txt_CLFVisitorID.Text}&purposeID={Txt_CLFPurposeID.Text}&sessionID={Txt_CLFSessionID.Text}");
+            string visitConfirmationURI = "/visits-service/email/";
+
+            if (isLTA)
+            {
+                visitConfirmationURI += "lta-";
+            }
+            visitConfirmationURI += $"clf-visit-confirmation?visitorID={Txt_CLFVisitorID.Text}&purposeID={Txt_CLFPurposeID.Text}&sessionID={Txt_CLFSessionID.Text}";
+
+            renderEmail(visitConfirmationURI);
+
+            MessageBox.Show(visitConfirmationURI);
+        
         }
+
+
 
 
         private void Btn_GenerateInsuranceNotification_Click(object sender, RoutedEventArgs e)
@@ -30,25 +45,6 @@ namespace EmailRenderer
             renderEmail($"/visits-service/email/invitation-email?visitorID={Txt_InvitationVisitorID.Text}");
         }
 
-        private void Btn_GenerateISISVisitConfirmationEmail_Click(object sender, RoutedEventArgs e)
-        {
-            renderEmail($"/visits-service/email/isis-visit-confirmation?visitorID={Txt_ISISVisitorID.Text}&purposeID={Txt_ISISPurposeID.Text}&sessionID={Txt_ISISSessionID.Text}");
-        }
-
-        private void Btn_GenerateLTACLFVisitConfirmationEmail_Click(object sender, RoutedEventArgs e)
-        {
-            renderEmail($"/visits-service/email/lta-clf-visit-confirmation?visitorID={Txt_LTACLFVisitorID.Text}&purposeID={Txt_LTACLFPurposeID.Text}&sessionID={Txt_LTACLFSessionID.Text}");
-        }
-
-        private void Btn_GenerateLTAISISVisitConfirmationEmail_Click(object sender, RoutedEventArgs e)
-        {
-            renderEmail($"/visits-service/email/lta-isis-visit-confirmation?visitorID={Txt_LTACLFVisitorID.Text}&purposeID={Txt_LTACLFPurposeID.Text}&sessionID={Txt_LTACLFSessionID.Text}");
-        }
-
-        private void Btn_GenerateOtherVisitConfirmationEmail_Click(object sender, RoutedEventArgs e)
-        {
-            renderEmail($"/visits-service/email/other-visit-confirmation?visitorID={Txt_LTACLFVisitorID.Text}&purposeID={Txt_LTACLFPurposeID.Text}");
-        }
 
         private void Btn_GenerateRequestConfirmationEmail_Click(object sender, RoutedEventArgs e)
         {
@@ -139,6 +135,14 @@ namespace EmailRenderer
             }
         }
 
+        private void cb_LTA_Checked(object sender, RoutedEventArgs e)
+        {
+            isLTA = true;
+        }
 
+        private void cb_LTA_Unchecked(object sender, RoutedEventArgs e)
+        {
+            isLTA = false;
+        }
     }
 }
