@@ -78,6 +78,7 @@ namespace EmailRenderer
         {
 
             loadProgress();
+            Lbl_Warning.Visibility = Visibility.Hidden;
             string AUTH_TOKEN = "6576b737-41e5-41af-a0ad-3d8e94ad99d2";
 
             HttpClient client = new HttpClient();
@@ -89,7 +90,19 @@ namespace EmailRenderer
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", AUTH_TOKEN);
 
             Email email = null;
-            HttpResponseMessage response = await client.GetAsync(uri);
+            HttpResponseMessage response;
+            try
+            {
+                response = await client.GetAsync(uri);
+            }
+            catch (System.Net.Http.HttpRequestException ex)
+            {
+                Lbl_Warning.Content = "Connection refused: please instantiate Docker container";
+                Lbl_Warning.Visibility = Visibility.Visible;
+                pbStatus.Value = 0;
+                return;
+            }
+            
             
             if (response.IsSuccessStatusCode)
             {
