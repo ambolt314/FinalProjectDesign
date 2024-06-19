@@ -15,23 +15,29 @@
             <TabControl Background="#1e2d7c">
                 <TabItem Header="Visit confirmation">
                     <StackPanel>
-                        <CheckBox Name="cb_LTA" Content="LTA visit" IsThreeState="False" IsChecked="False" Checked="cb_LTA_Checked" Unchecked="cb_LTA_Unchecked"  Foreground="white"/>
-                        <TextBox Name="Txt_ConfirmationVisitorID" TextWrapping="Wrap" Text="Visitor ID" Width="120" Margin="5 5"/>
-                        <TextBox Name="Txt_ConfirmationPurposeID" TextWrapping="Wrap" Text="Purpose ID" Width="120" Margin="5 5"/>
-                        <TextBox Name="Txt_ConfirmationSessionID" TextWrapping="Wrap" Text="Session ID" Width="120" Margin="5 5"/>
-                        <Button Name="Btn_GenerateVisitConfirmation" Content="Generate email" Click="Btn_GenerateVisitConfirmationEmail_Click" VerticalAlignment="Bottom" Width="120"/>
+                        <CheckBox Name="Cb_LTA" Content="LTA visit" IsThreeState="False" IsChecked="False" Foreground="white" Margin="0 15"/>
+                        <StackPanel Margin="0 50">
+                            <Label Content="Facility" Foreground="white"/>
+                            <RadioButton Name="Rb_CLF" GroupName="facility" Content="Central Laser Facility" Foreground="white"/>
+                            <RadioButton Name="Rb_ISIS" GroupName="facility" Content="ISIS Neutron and Muon Source" Foreground="white"/>
+                            <RadioButton Name="Rb_Other" GroupName="facility" Content="Other" Foreground="white" Checked="Rb_Other_Checked" Unchecked="Rb_Other_Unchecked"/>
+                        </StackPanel>
+                        <TextBox Name="Txt_ConfirmationVisitorID" TextWrapping="Wrap" Text="Visitor ID" Width="180" Margin="5 5"/>
+                        <TextBox Name="Txt_ConfirmationPurposeID" TextWrapping="Wrap" Text="Purpose ID" Width="180" Margin="5 5"/>
+                        <TextBox Name="Txt_ConfirmationSessionID" TextWrapping="Wrap" Text="Session ID" Width="180" Margin="5 5"/>
+                        <Button Name="Btn_GenerateVisitConfirmation" Content="Generate email contents" Click="Btn_GenerateVisitConfirmationEmail_Click" VerticalAlignment="Bottom" Width="180"/>
                     </StackPanel>
                 </TabItem>
                 <TabItem Header="Insurance notification">
                     <StackPanel>
-                        <TextBox Name="Txt_InsuranceVisitID" TextWrapping="Wrap" Text="Visit ID" Width="120" Margin="5 5"/>
-                        <Button Name="Btn_GenerateInsuranceNotification" Content="Generate email" VerticalAlignment="Bottom" Width="120" Click="Btn_GenerateInsuranceNotification_Click"/>
+                        <TextBox Name="Txt_InsuranceVisitID" TextWrapping="Wrap" Text="Visit ID" Width="180" Margin="5 5"/>
+                        <Button Name="Btn_GenerateInsuranceNotification" Content="Generate email contents" VerticalAlignment="Bottom" Width="180" Click="Btn_GenerateInsuranceNotification_Click"/>
                     </StackPanel>
                 </TabItem>
                 <TabItem Header="Invitation email">
                     <StackPanel>
-                        <TextBox Name="Txt_InvitationVisitorID" TextWrapping="Wrap" Text="Visitor ID" Width="120" Margin="5 5"/>
-                        <Button Name="Btn_GenerateInvitationEmail" Content="Generate" Click="Btn_GenerateInvitationEmail_Click" VerticalAlignment="Bottom" Width="120"/>
+                        <TextBox Name="Txt_InvitationVisitorID" TextWrapping="Wrap" Text="Visitor ID" Width="180" Margin="5 5"/>
+                        <Button Name="Btn_GenerateInvitationEmail" Content="Generate email contents" Click="Btn_GenerateInvitationEmail_Click" VerticalAlignment="Bottom" Width="180"/>
                     </StackPanel>
                 </TabItem>
                 

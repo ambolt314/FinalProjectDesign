@@ -1,6 +1,7 @@
 ﻿using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Windows;
+using System.Windows.Controls;
 
 namespace EmailRenderer
 {
@@ -14,21 +15,38 @@ namespace EmailRenderer
             InitializeComponent();
         }
 
-        Boolean isLTA = false;
-
         private void Btn_GenerateVisitConfirmationEmail_Click(object sender, RoutedEventArgs e)
         {
             string visitConfirmationURI = "/visits-service/email/";
 
-            if (isLTA)
+            if (Cb_LTA.IsChecked == true)
             {
                 visitConfirmationURI += "lta-";
             }
-            visitConfirmationURI += $"clf-visit-confirmation?visitorID={Txt_CLFVisitorID.Text}&purposeID={Txt_CLFPurposeID.Text}&sessionID={Txt_CLFSessionID.Text}";
+
+            if (Rb_CLF.IsChecked == true)
+            {
+                visitConfirmationURI += "clf";
+
+            }
+            else if (Rb_ISIS.IsChecked == true)
+            {
+                visitConfirmationURI += "isis";
+            }
+            else if (Rb_Other.IsChecked == true)
+            {
+                visitConfirmationURI += "other";
+            }
+            visitConfirmationURI += $"-visit-confirmation?visitorID={Txt_ConfirmationVisitorID.Text}&purposeID={Txt_ConfirmationPurposeID.Text}";
+
+            if (Rb_Other.IsChecked != true)
+            {
+                visitConfirmationURI += $"&sessionID={Txt_ConfirmationSessionID.Text}";
+            }
 
             renderEmail(visitConfirmationURI);
 
-            MessageBox.Show(visitConfirmationURI);
+            MessageBox.Show($"URI: {visitConfirmationURI}");
         
         }
 
@@ -50,10 +68,6 @@ namespace EmailRenderer
         {
             renderEmail($"");
         }
-
-        
-
-        
         
 
         private void Btn_SendEmail_Click(object sender, RoutedEventArgs e)
@@ -135,14 +149,22 @@ namespace EmailRenderer
             }
         }
 
-        private void cb_LTA_Checked(object sender, RoutedEventArgs e)
+        private void Rb_Other_Checked(object sender, RoutedEventArgs e)
         {
-            isLTA = true;
+            Txt_ConfirmationSessionID.Visibility = Visibility.Hidden;
+            Txt_ConfirmationSessionID.IsReadOnly = true;
+
+            Cb_LTA.Visibility = Visibility.Hidden;
+            Cb_LTA.IsChecked = false;
         }
 
-        private void cb_LTA_Unchecked(object sender, RoutedEventArgs e)
+        private void Rb_Other_Unchecked(object sender, RoutedEventArgs e)
         {
-            isLTA = false;
+            Txt_ConfirmationSessionID.Visibility = Visibility.Visible;
+            Txt_ConfirmationSessionID.IsReadOnly = false;
+
+            Cb_LTA.Visibility = Visibility.Visible;
+            Cb_LTA.IsChecked = false;
         }
     }
 }
