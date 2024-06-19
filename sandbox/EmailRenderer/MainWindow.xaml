@@ -5,22 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EmailRenderer"
         mc:Ignorable="d"
-        Title="Document generation service - CLIENT" Height="640" Width="800">
+        Title="Document generation service - CLIENT" Height="640" Width="833">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.3*"/>
             <ColumnDefinition Width="0.7*"/>
         </Grid.ColumnDefinitions>
-        <StackPanel Background="#1e2d7c" Grid.Column="0">
-            <TabControl Background="#1e2d7c" Height="623">
+        <StackPanel Background="#eee" Grid.Column="0">
+            <TabControl Background="#eee" Height="623" Foreground="#1e2d7c">
                 <TabItem Header="Visit confirmation">
                     <StackPanel>
-                        <CheckBox Name="Cb_LTA" Content="LTA visit" IsThreeState="False" IsChecked="False" Foreground="white" Margin="0 15"/>
+                        <CheckBox Name="Cb_LTA" Content="LTA visit" IsThreeState="False" IsChecked="False" Foreground="#1e2d7c" Margin="0 15"/>
                         <StackPanel Margin="0 50">
                             <Label Content="Facility" Foreground="white"/>
-                            <RadioButton Name="Rb_CLF" GroupName="facility" Content="Central Laser Facility" Foreground="white"/>
-                            <RadioButton Name="Rb_ISIS" GroupName="facility" Content="ISIS Neutron and Muon Source" Foreground="white"/>
-                            <RadioButton Name="Rb_Other" GroupName="facility" Content="Other" Foreground="white" Checked="Rb_Other_Checked" Unchecked="Rb_Other_Unchecked"/>
+                            <RadioButton Name="Rb_CLF" GroupName="facility" Content="Central Laser Facility" Foreground="#1e2d7c"/>
+                            <RadioButton Name="Rb_ISIS" GroupName="facility" Content="ISIS Neutron and Muon Source" Foreground="#1e2d7c"/>
+                            <RadioButton Name="Rb_Other" GroupName="facility" Content="Other" Foreground="#1e2d7c" Checked="Rb_Other_Checked" Unchecked="Rb_Other_Unchecked"/>
                         </StackPanel>
                         <TextBox Name="Txt_ConfirmationVisitorID" TextWrapping="Wrap" Text="Visitor ID" Width="180" Margin="5 5"/>
                         <TextBox Name="Txt_ConfirmationPurposeID" TextWrapping="Wrap" Text="Purpose ID" Width="180" Margin="5 5"/>
@@ -44,13 +44,13 @@
                 </TabItem>
                 <TabItem Header="WELCOME" IsSelected="True">
                     <StackPanel>
-                        <TextBlock Foreground="white" FontSize="32" TextWrapping="WrapWithOverflow" Margin="5 5">
+                        <TextBlock Foreground="#1e2d7c" FontSize="32" TextWrapping="WrapWithOverflow" Margin="5 5">
     Document generation service client
                         </TextBlock>
-                        <TextBlock Foreground="white" FontSize="16" FontStyle="Italic" TextWrapping="WrapWithOverflow" Margin="5 5">
+                        <TextBlock Foreground="#1e2d7c" FontSize="16" FontStyle="Italic" TextWrapping="WrapWithOverflow" Margin="5 5">
     Andrew Michael Bolt (1934573)
                         </TextBlock>
-                        
+                        <Image Source="images/our-council-logo-stfc.png" Margin="5 150"/>
                     </StackPanel>
                     
                 </TabItem>
@@ -58,22 +58,22 @@
 
         </StackPanel>
 
-        <StackPanel Background="#ddddee" Grid.Column="1">
+        <StackPanel Background="white" Grid.Column="1">
             <Grid Margin="20" Height="10">
                 <ProgressBar Minimum="0" Maximum="100" Name="pbStatus" />
             </Grid>
-            <Label Content="From:" HorizontalAlignment="Left"/>
+            <Label Content="From:" HorizontalAlignment="Left" Foreground="#1e2d7c" FontSize="16"/>
             <TextBox Name="Txt_From" TextWrapping="Wrap" Text="" Width="350" Margin="5 2" HorizontalAlignment="Left" IsReadOnly="True"/>
-            <Label Content="To:" HorizontalAlignment="Left"/>
+            <Label Content="To:" HorizontalAlignment="Left" Foreground="#1e2d7c" FontSize="16"/>
             <TextBox Name="Txt_To" TextWrapping="Wrap" Text="" Width="350" Margin="5 2" HorizontalAlignment="Left" IsReadOnly="True"/>
-            <Label Content="Cc:" HorizontalAlignment="Left"/>
+            <Label Content="Cc:" HorizontalAlignment="Left" Foreground="#1e2d7c" FontSize="16"/>
             <TextBox Name="Txt_Cc" TextWrapping="Wrap" Text="" Width="350" Margin="5 2" HorizontalAlignment="Left" IsReadOnly="True"/>
-            <Label Content="Subject:" HorizontalAlignment="Left"/>
+            <Label Content="Subject:" HorizontalAlignment="Left" Foreground="#1e2d7c" FontSize="16"/>
             <TextBox Name="Txt_Subject" TextWrapping="Wrap" Text="" Width="350" Margin="5 2" HorizontalAlignment="Left" IsReadOnly="True"/>
-            <Label Content="Body:" HorizontalAlignment="Left"/>
+            <Label Content="Body:" HorizontalAlignment="Left" Foreground="#1e2d7c" FontSize="16"/>
             <TextBox Name="Txt_Body" TextWrapping="Wrap" Text="" Width="550" Height="150"  Margin="5 2" HorizontalAlignment="Left" IsReadOnly="True"/>
             <Button Content="Send email" Width="120" HorizontalAlignment="Left" Margin="5 2" Name="Btn_SendEmail" Click="Btn_SendEmail_Click"/>
-            <Label Name="Lbl_Warning" Content="Please generate an email!" Foreground="red" Visibility="Hidden"/>
+            <Label Name="Lbl_Warning" Content="Please generate an email!" Foreground="red" Visibility="Hidden" FontSize="24"/>
         </StackPanel>
     </Grid>
 </Window>
