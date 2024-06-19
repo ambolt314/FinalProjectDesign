@@ -17,7 +17,7 @@
                     <StackPanel>
                         <CheckBox Name="Cb_LTA" Content="LTA visit" IsThreeState="False" IsChecked="False" Foreground="#1e2d7c" Margin="0 15"/>
                         <StackPanel Margin="0 50">
-                            <Label Content="Facility" Foreground="white"/>
+                            <Label Content="Facility" Foreground="#1e2d7c"/>
                             <RadioButton Name="Rb_CLF" GroupName="facility" Content="Central Laser Facility" Foreground="#1e2d7c"/>
                             <RadioButton Name="Rb_ISIS" GroupName="facility" Content="ISIS Neutron and Muon Source" Foreground="#1e2d7c"/>
                             <RadioButton Name="Rb_Other" GroupName="facility" Content="Other" Foreground="#1e2d7c" Checked="Rb_Other_Checked" Unchecked="Rb_Other_Unchecked"/>
