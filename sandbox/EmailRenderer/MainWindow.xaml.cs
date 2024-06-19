@@ -45,9 +45,6 @@ namespace EmailRenderer
             }
 
             renderEmail(visitConfirmationURI);
-
-            MessageBox.Show($"URI: {visitConfirmationURI}");
-        
         }
 
 
