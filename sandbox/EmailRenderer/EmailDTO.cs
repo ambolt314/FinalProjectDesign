@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EmailRenderer
 {
-    public class Email
+    public class EmailDTO
     {
         public string Type { get; set; }
         public string From { get; set; }

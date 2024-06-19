@@ -17,7 +17,7 @@ namespace EmailRenderer
 
         private void Btn_GenerateVisitConfirmationEmail_Click(object sender, RoutedEventArgs e)
         {
-            string visitConfirmationURI = "/visits-service/email/";
+            string visitConfirmationURI = "/visits-service/emailDTO/";
 
             if (Cb_LTA.IsChecked == true)
             {
@@ -52,12 +52,12 @@ namespace EmailRenderer
 
         private void Btn_GenerateInsuranceNotification_Click(object sender, RoutedEventArgs e)
         {
-            renderEmail($"/visits-service/email/insurance-notification?visitID={Txt_InsuranceVisitID.Text}");
+            renderEmail($"/visits-service/emailDTO/insurance-notification?visitID={Txt_InsuranceVisitID.Text}");
         }
 
         private void Btn_GenerateInvitationEmail_Click(object sender, RoutedEventArgs e)
         {
-            renderEmail($"/visits-service/email/invitation-email?visitorID={Txt_InvitationVisitorID.Text}");
+            renderEmail($"/visits-service/emailDTO/invitation-emailDTO?visitorID={Txt_InvitationVisitorID.Text}");
         }
 
 
@@ -75,7 +75,7 @@ namespace EmailRenderer
             }
             else
             {
-                MessageBox.Show($"Email successfully sent at {DateTime.Now}");
+                MessageBox.Show($"EmailDTO successfully sent at {DateTime.Now}");
             }
 
         }
@@ -96,7 +96,7 @@ namespace EmailRenderer
                 new MediaTypeWithQualityHeaderValue("application/json"));
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", AUTH_TOKEN);
 
-            Email email = null;
+            EmailDTO emailDTO = null;
             HttpResponseMessage response;
             try
             {
@@ -113,19 +113,19 @@ namespace EmailRenderer
             
             if (response.IsSuccessStatusCode)
             {
-                email = await response.Content.ReadAsAsync<Email>();
+                emailDTO = await response.Content.ReadAsAsync<EmailDTO>();
 
                 Lbl_Warning.Visibility = Visibility.Hidden;
-                Txt_From.Text = $"{email.FromName} <{email.From}>";
-                Txt_To.Text = $"{email.ToName} <{email.To}>";
-                Txt_Cc.Text = email.CC;
-                Txt_Subject.Text = email.Subject;
-                Txt_Body.Text = email.Body;
+                Txt_From.Text = $"{emailDTO.FromName} <{emailDTO.From}>";
+                Txt_To.Text = $"{emailDTO.ToName} <{emailDTO.To}>";
+                Txt_Cc.Text = emailDTO.CC;
+                Txt_Subject.Text = emailDTO.Subject;
+                Txt_Body.Text = emailDTO.Body;
             }
             else
             {
                 pbStatus.Value = 0;
-                Lbl_Warning.Content = "Email could not be generated";
+                Lbl_Warning.Content = "EmailDTO could not be generated";
                 Lbl_Warning.Visibility = Visibility.Visible;
                 Txt_From.Text = "";
                 Txt_To.Text = "";
