@@ -52,18 +52,18 @@ namespace EmailRenderer
 
         private void Btn_GenerateInsuranceNotification_Click(object sender, RoutedEventArgs e)
         {
-            renderEmail($"/visits-service/emailDTO/insurance-notification?visitID={Txt_InsuranceVisitID.Text}");
+            renderEmail($"/visits-service/email/insurance-notification?visitID={Txt_InsuranceVisitID.Text}");
         }
 
         private void Btn_GenerateInvitationEmail_Click(object sender, RoutedEventArgs e)
         {
-            renderEmail($"/visits-service/emailDTO/invitation-emailDTO?visitorID={Txt_InvitationVisitorID.Text}");
+            renderEmail($"/visits-service/email/invitation-email?visitorID={Txt_InvitationVisitorID.Text}");
         }
 
 
         private void Btn_GenerateRequestConfirmationEmail_Click(object sender, RoutedEventArgs e)
         {
-            renderEmail($"");
+            renderEmail($"/visits-service/email/request-confirmation?reqVisitID={Txt_RequestConfirmationReqVisitID.Text}");
         }
         
 

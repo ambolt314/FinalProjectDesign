@@ -41,6 +41,11 @@
                     </StackPanel>
                 </TabItem>
                 <TabItem Header="Request confirmation">
+                    <StackPanel>
+                        <TextBox Name="Txt_RequestConfirmationReqVisitID" TextWrapping="Wrap" Text="ReqVisit ID" Width="180" Margin="5 5"/>
+                        <Button Name="Btn_GenerateRequestConfirmationEmail" Content="Generate email contents" Click="Btn_GenerateRequestConfirmationEmail_Click" VerticalAlignment="Bottom" Width="180"/>
+                    </StackPanel>
+                    
                 </TabItem>
                 <TabItem Header="WELCOME" IsSelected="True">
                     <StackPanel>
