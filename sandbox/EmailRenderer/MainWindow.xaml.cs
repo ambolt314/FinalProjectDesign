@@ -72,6 +72,8 @@ namespace EmailRenderer
             if (Txt_From.Text == "" || Txt_To.Text == "" || Txt_Cc.Text == "" || Txt_Subject.Text == "" || Txt_Body.Text == "")
             {
                 Lbl_Warning.Visibility = Visibility.Visible;
+                Lbl_Warning.FontSize = 16;
+                Lbl_Warning.Content = "Please generate an email";
             }
             else
             {
@@ -105,6 +107,7 @@ namespace EmailRenderer
             catch (HttpRequestException ex)
             {
                 Lbl_Warning.Content = "Connection refused: please instantiate Docker container";
+                Lbl_Warning.FontSize = 16;
                 Lbl_Warning.Visibility = Visibility.Visible;
                 pbStatus.Value = 0;
                 return;
@@ -127,6 +130,7 @@ namespace EmailRenderer
                 pbStatus.Value = 0;
                 Lbl_Warning.Content = "EmailDTO could not be generated";
                 Lbl_Warning.Visibility = Visibility.Visible;
+                Lbl_Warning.FontSize = 24;
                 Txt_From.Text = "";
                 Txt_To.Text = "";
                 Txt_Cc.Text = "";
