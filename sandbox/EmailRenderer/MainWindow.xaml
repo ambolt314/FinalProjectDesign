@@ -73,7 +73,7 @@
             <Label Content="Body:" HorizontalAlignment="Left" Foreground="#1e2d7c" FontSize="16"/>
             <TextBox Name="Txt_Body" TextWrapping="Wrap" Text="" Width="550" Height="150"  Margin="5 2" HorizontalAlignment="Left" IsReadOnly="True"/>
             <Button Content="Send email" Width="120" HorizontalAlignment="Left" Margin="5 2" Name="Btn_SendEmail" Click="Btn_SendEmail_Click"/>
-            <Label Name="Lbl_Warning" Content="Please generate an email!" Foreground="red" Visibility="Hidden" FontSize="24"/>
+            <Label Name="Lbl_Warning" Content="Please generate an email" Foreground="red" Visibility="Hidden" FontSize="24"/>
         </StackPanel>
     </Grid>
 </Window>
