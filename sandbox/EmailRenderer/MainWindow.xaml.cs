@@ -123,7 +123,7 @@ namespace EmailRenderer
                 Txt_To.Text = $"{emailDTO.ToName} <{emailDTO.To}>";
                 Txt_Cc.Text = emailDTO.CC;
                 Txt_Subject.Text = emailDTO.Subject;
-                Txt_Body.Text = emailDTO.Body;
+                Txt_Body.Text = emailDTO.Body.Replace("<br>", "\n");
             }
             else
             {
