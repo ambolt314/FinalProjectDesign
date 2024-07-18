@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-07-03T20:41:49.976Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:127.0) Gecko/20100101 Firefox/127.0" etag="e11a-3VaUX2G2XFdwHo2" version="24.6.4" type="github">
+<mxfile host="app.diagrams.net" modified="2024-07-18T22:28:58.896Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0" etag="CJTCkjOT6TQuzUb2KPwT" version="24.7.1" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="2442" dy="2146" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2062" dy="1916" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -16,7 +16,7 @@
         <mxCell id="MQ1HAu035y0CXCqz7wdD-2" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="MQ1HAu035y0CXCqz7wdD-0" vertex="1">
           <mxGeometry y="70" width="361" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="MQ1HAu035y0CXCqz7wdD-3" value="&lt;div&gt;&lt;div&gt;+ getCLFVisitConfirmationEmail(Long visitorID): EmailDTO&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ getInsuranceNotification(Long visitID): EmailDTO&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ getInvitationEmail(Long visitorID): EmailDTO&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ getISISVisitConfirmationEmail(Long visitorID): EmailDTO&lt;/div&gt;&lt;div&gt;+ getLTACLFVisitConfirmationEmail(Long visitorID): EmailDTO&lt;/div&gt;&lt;div&gt;+ getLTAISISVisitConfirmationEmail(Long visitorID): EmailDTO&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ getOtherVisitConfirmationEmail(Long visitorID): EmailDTO&lt;/div&gt;&lt;div&gt;+ getRequestConfirmation(Long reqVisitID): EmailDTO&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="MQ1HAu035y0CXCqz7wdD-0" vertex="1">
+        <mxCell id="MQ1HAu035y0CXCqz7wdD-3" value="&lt;div&gt;&lt;div&gt;+ getCLFVisitConfirmationEmail(Long visitorID): EmailDTO&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ getInvitationEmail(Long visitorID): EmailDTO&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ getISISVisitConfirmationEmail(Long visitorID): EmailDTO&lt;/div&gt;&lt;div&gt;+ getLTACLFVisitConfirmationEmail(Long visitorID): EmailDTO&lt;/div&gt;&lt;div&gt;+ getLTAISISVisitConfirmationEmail(Long visitorID): EmailDTO&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ getOtherVisitConfirmationEmail(Long visitorID): EmailDTO&lt;/div&gt;&lt;div&gt;+ getRequestConfirmation(Long reqVisitID): EmailDTO&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="MQ1HAu035y0CXCqz7wdD-0" vertex="1">
           <mxGeometry y="78" width="361" height="142" as="geometry" />
         </mxCell>
         <mxCell id="MQ1HAu035y0CXCqz7wdD-16" value="EmailDTO" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
@@ -258,13 +258,13 @@
         <mxCell id="zF09DsBkX-imnk4xTCFa-50" value="SAFETY_TEST" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="zF09DsBkX-imnk4xTCFa-46" vertex="1">
           <mxGeometry y="118" width="160" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="OkYGjvCRZaEeJ6MBxUHA-0" value="EmailResource" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad7ac;strokeColor=#b46504;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="OkYGjvCRZaEeJ6MBxUHA-0" value="EmailResource" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad7ac;strokeColor=#b46504;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="540" y="-540" width="361" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="OkYGjvCRZaEeJ6MBxUHA-3" value="&lt;div&gt;+ getVisitConfirmationEmail(String facilityName, Boolean isLTA, Long visitID): EmailDTO&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="OkYGjvCRZaEeJ6MBxUHA-0">
+        <mxCell id="OkYGjvCRZaEeJ6MBxUHA-3" value="&lt;div&gt;+ getVisitConfirmationEmail(String facilityName, Boolean isLTA, Long visitID): EmailDTO&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="OkYGjvCRZaEeJ6MBxUHA-0" vertex="1">
           <mxGeometry y="26" width="361" height="44" as="geometry" />
         </mxCell>
-        <mxCell id="OkYGjvCRZaEeJ6MBxUHA-4" value="The method parameters depend on the copy text for each endpoint" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fad7ac;strokeColor=#b46504;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="OkYGjvCRZaEeJ6MBxUHA-4" value="The method parameters depend on the copy text for each endpoint" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fad7ac;strokeColor=#b46504;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="-22" y="58" width="80" height="138" as="geometry" />
         </mxCell>
       </root>
